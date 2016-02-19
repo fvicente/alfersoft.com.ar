@@ -24,7 +24,7 @@ comments: true
 
 The idea of this project is to control (switch off/on) two power sockets with a computer by using its USB port. I&#8217;ve chosen USB in first place because I wanted to experiment with the PIC18F4550 microchip&#8217;s microcontroller, and secondly because the power supplied by this port (500mA) is enough to activate a relay without any additional power supply.
 
-<img src="http://www.alfersoft.com.ar/files/usocket/pictures/proto04.jpg" alt="Prototype" width="450" height="338" />
+<img src="{{ site.url }}/images/usocket/proto04.jpg" alt="Prototype" width="450" height="338" />
 
 <!--more-->
 
@@ -38,44 +38,38 @@ The whole project including PIC firmware and Eagle files is available for downlo
 
 **Advice:** Despites the high voltage part of the circuit is virtually isolated from the controller circuit by relays, these devices always represents a risk of mechanical failure and they can possibly damage your equipment or even cause physical injuries, so we (the author or the webmasters) are not responsible of any lose or damage.
 
+
 ## The Circuit
 
-<p style="text-align: center;">
-  <a title="Schematic" href="http://www.alfersoft.com.ar/files/usocket/pictures/full.png" target="_blank"><img class="aligncenter" style="border: 1px solid black;" src="http://www.alfersoft.com.ar/files/usocket/pictures/full.png" alt="Figure 1 - Schematic" width="450" height="393" /></a>
-</p>
-
-<p style="text-align: center;">
-  Figure 1 &#8211; Schematic
-</p>
+<figure style="text-align: center;">
+	<a title="Schematic" href="{{ site.url }}/images/usocket/full.png" target="_blank"><img style="border: 1px solid black;" src="{{ site.url }}/images/usocket/full.png" alt="Figure 1 - Schematic" width="450" height="393" /></a>
+	<figcaption>Figure 1 &#8211; Schematic</figcaption>
+</figure>
 
 Pretty much the same as USBDAQ but two (identical) sub-circuits were added to control the relays. A Darlington-transistor is used to protect the hardware. Once again, the idea was obtained from the web (thanks to google) and [here is the link to the original article](http://b-l-w.de/serialrelay_en.php "Relay control").
 
 The PCB is divided in 3 little boards, for commodity and socket case space issues. (I&#8217;ve used only 2 strip boards in the actual prototype).
 
-<p style="text-align: center;">
-  <a title="Board" href="http://www.alfersoft.com.ar/files/usocket/pictures/full_board.png" target="_blank"><img class="aligncenter" style="border: 1px solid black;" src="http://www.alfersoft.com.ar/files/usocket/pictures/full_board.png" alt="Figure 2 - Board" width="450" height="271" /></a>
-</p>
-
-<p style="text-align: center;">
-  Figure 2 &#8211; Board
-</p>
+<figure style="text-align: center;">
+	<a title="Board" href="{{ site.url }}/images/usocket/full_board.png" target="_blank"><img style="border: 1px solid black;" src="{{ site.url }}/images/usocket/full_board.png" alt="Figure 2 - Board" width="450" height="271" /></a>
+	<figcaption>Figure 2 &#8211; Board</figcaption>
+</figure>
 
 List of materials:
 
-  * IC1 &#8211; PIC16F4550 Microchip&#8217;s micro-controller ([datasheet](http://www.alfersoft.com.ar/files/usocket/datasheets/pic18f4550-microchip.pdf "PIC18F4550 by Microchip"))
+  * IC1 &#8211; PIC16F4550 Microchip&#8217;s micro-controller ([datasheet]({{ site.url }}/files/datasheets/pic18f4550-microchip.pdf "PIC18F4550 by Microchip"))
   * Q2 &#8211; Crystal 20Mhz
   * R1 &#8211; Resistor 4.7K
   * R2 &#8211; Resistor 1M
   * R3, R5 &#8211; Resistors 150
   * R4, R6 &#8211; Resistors 100K
-  * K1, K3 &#8211; 5v Relays. I&#8217;ve used FBR211 by Fujitsu ([datasheet](http://www.alfersoft.com.ar/files/usocket/datasheets/fbr211-relay-fujitsu.pdf "FBR211 Relay by Fujitsu"))
+  * K1, K3 &#8211; 5v Relays. I&#8217;ve used FBR211 by Fujitsu ([datasheet]({{ site.url }}/files/datasheets/fbr211-relay-fujitsu.pdf "FBR211 Relay by Fujitsu"))
   * D1, D2, D3. D4 &#8211; Diodes 1N4004
-  * Q1, Q3 &#8211; BC517 Darlington-transistors ([datasheet](http://www.alfersoft.com.ar/files/usocket/datasheets/bc517.pdf "BC517 Darlington Transistor"))
+  * Q1, Q3 &#8211; BC517 Darlington-transistors ([datasheet]({{ site.url }}/files/datasheets/bc517.pdf "BC517 Darlington Transistor"))
   * LED1, LED2 &#8211; Regular leds
   * C1, C2 &#8211; Capacitors 22pF
   * C3 &#8211; Capacitor 470pF
-  * X1 &#8211; Mini-USB Connector Type B ([datasheet](http://www.alfersoft.com.ar/files/usocket/datasheets/2411-02-lumberg-usb-connector-type-b.pdf "USB connector type B"))
-
+  * X1 &#8211; Mini-USB Connector Type B ([datasheet]({{ site.url }}/files/datasheets/2411-02-lumberg-usb-connector-type-b.pdf "USB connector type B"))
 
 
 ## PIC Firmware
@@ -86,7 +80,8 @@ I set bMaxPower to 250, which means 500mA. The power provided by hosts and hubs 
 
 The file modified is the one that contains the USB descriptor: fw/cdc/autofiles/usbdsc.c
 
-<pre class="brush: cpp; title: ; notranslate" title="">/* Configuration 1 Descriptor */
+{% highlight cpp %}
+/* Configuration 1 Descriptor */
 CFG01=
 {
 /* Configuration Descriptor */
@@ -101,11 +96,12 @@ _DEFAULT,               // Attributes, see usbdefs_std_dsc.h
 
 ...
 
-</pre>
+{% endhighlight %}
 
 In the same file I modified the Vendor ID, Product ID and corresponding strings
 
-<pre class="brush: cpp; title: ; notranslate" title="">/* Device Descriptor */
+{% highlight cpp %}
+/* Device Descriptor */
 rom USB_DEV_DSC device_dsc=
 {
 sizeof(USB_DEV_DSC),    // Size of this descriptor in bytes
@@ -136,11 +132,12 @@ sizeof(sd002),DSC_STR,
 'A','l','f','e','r','S','o','f','t',' ',
 'U','S','o','c','k','e','t',' ','1','.','0'};
 
-</pre>
+{% endhighlight %}
 
 And the file driver/win2k_winxp/mchpcdc.inf  Windows, to match the new vendor, product ID and description
 
-<pre class="brush: cpp; title: ; notranslate" title="">[DeviceList]
+{% highlight INI %}
+[DeviceList]
 %DESCRIPTION%=DriverInstall, USB\VID_AF01&PID_AF0A
 
 ...
@@ -155,13 +152,15 @@ MFGNAME="alfersoft.com.ar"
 DESCRIPTION="Communications Port"
 SERVICE="AlferSoft USocket 1.0"
 
-</pre>
+{% endhighlight %}
+
 
 ## Programming the PIC
 
 I&#8217;ve used WinPic800 to program the PIC. Here is a screenshot of the parameters I used to program it.
 
-<img style="border: 1px solid black;" src="http://www.alfersoft.com.ar/files/usocket/pictures/usbparams.png" alt="Parameters to program the PIC" width="450" height="304" />
+<img style="border: 1px solid black;" src="{{ site.url }}/images/usocket/usbparams.png" alt="Parameters to program the PIC" width="450" height="304" />
+
 
 ## Commands
 
@@ -174,155 +173,152 @@ I didn&#8217;t modified any of the USBDAQ commands. They are all available but I
 
 All the commands are followed by an enter (chr(13) or &#8216;\n&#8217;).
 
+
 ## Installing (Windows)
 
-  1. Plug the device into the USB port, the following message will appear in the tray bar.
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket01_inst_win.png" alt="Installation Windows step 1" width="440" height="180" />
-</p>
+1. Plug the device into the USB port, the following message will appear in the tray bar.
 
-  2. In the first page of the &#8220;Found New Hardware Wizard&#8221; select &#8220;No, not this time&#8221; and click Next button.
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket02_inst_win.png" alt="Installation Windows step 2" width="450" height="351" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket01_inst_win.png" alt="Installation Windows step 1" width="440" height="180" />
+	</figure>
 
-  3. Select the &#8220;Install from a list or specific location (Advanced)&#8221; option and click Next button.
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket03_inst_win.png" alt="Installation Windows step 3" width="450" height="351" />
-</p>
+2. In the first page of the &#8220;Found New Hardware Wizard&#8221; select &#8220;No, not this time&#8221; and click Next button.
 
-  4. Mark the &#8220;Include this location in the search:&#8221; and browse for the directory where the .inf file is located (driver\win2k_winxp)
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket04_inst_win.png" alt="Installation Windows step 4" width="450" height="351" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket02_inst_win.png" alt="Installation Windows step 2" width="450" height="351" />
+	</figure>
+3. Select the &#8220;Install from a list or specific location (Advanced)&#8221; option and click Next button.
 
-  5. This message will appear:
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket05_inst_win.png" alt="Installation Windows step 5" width="450" height="351" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket03_inst_win.png" alt="Installation Windows step 3" width="450" height="351" />
+	</figure>
 
-  6. And then this one:
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket06_inst_win.png" alt="Installation Windows step 6" width="450" height="351" />
-</p>
+4. Mark the &#8220;Include this location in the search:&#8221; and browse for the directory where the .inf file is located (driver\win2k_winxp)
 
-  7. When the installation is done press &#8220;Finish&#8221;
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket07_inst_win.png" alt="Installation Windows step 7" width="450" height="351" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket04_inst_win.png" alt="Installation Windows step 4" width="450" height="351" />
+	</figure>
 
-  8. After that the hardware is ready to use.
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket08_inst_win.png" alt="Installation Windows step 8" width="440" height="180" />
-</p>
+5. This message will appear:
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket05_inst_win.png" alt="Installation Windows step 5" width="450" height="351" />
+	</figure>
+
+6. And then this one:
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket06_inst_win.png" alt="Installation Windows step 6" width="450" height="351" />
+	</figure>
+
+7. When the installation is done press &#8220;Finish&#8221;
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket07_inst_win.png" alt="Installation Windows step 7" width="450" height="351" />
+	</figure>
+
+8. After that the hardware is ready to use.
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket08_inst_win.png" alt="Installation Windows step 8" width="440" height="180" />
+	</figure>
+
 
 ## Testing (Windows)
 
-  1. Go to the device manager and locate the new COM port added, in my example COM10 was added
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket09_test_win.png" alt="Installation Windows step 9" width="450" height="317" />
-</p>
+1. Go to the device manager and locate the new COM port added, in my example COM10 was added
 
-  2. Open Hyperterminal and choose a name for the new conection
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket10_test_win.png" alt="Installation Windows step 10" width="332" height="299" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket09_test_win.png" alt="Installation Windows step 9" width="450" height="317" />
+	</figure>
 
-  3. Select the new COM port
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket11_test_win.png" alt="Installation Windows step 11" width="296" height="300" />
-</p>
+2. Open Hyperterminal and choose a name for the new conection
 
-  4. Set the Bit rate to 115200
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket12_test_win.png" alt="Installation Windows step 12" width="344" height="407" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket10_test_win.png" alt="Installation Windows step 10" width="332" height="299" />
+	</figure>
 
-  5. This step is optional to see what we are typing on the screen, choose ASCII Setup
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket13_test_win.png" alt="Installation Windows step 13" width="344" height="423" />
-</p>
+3. Select the new COM port
 
-  6. Then mark &#8220;Echo typed characters locally&#8221;
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket14_test_win.png" alt="Installation Windows step 14" width="263" height="316" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket11_test_win.png" alt="Installation Windows step 11" width="296" height="300" />
+	</figure>
 
-  7. Finally connect and type one of the commands
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket15_test_win.png" alt="Installation Windows step 15" width="450" height="302" />
-</p>
+4. Set the Bit rate to 115200
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket12_test_win.png" alt="Installation Windows step 12" width="344" height="407" />
+	</figure>
+
+5. This step is optional to see what we are typing on the screen, choose ASCII Setup
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket13_test_win.png" alt="Installation Windows step 13" width="344" height="423" />
+	</figure>
+
+6. Then mark &#8220;Echo typed characters locally&#8221;
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket14_test_win.png" alt="Installation Windows step 14" width="263" height="316" />
+	</figure>
+
+7. Finally connect and type one of the commands
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket15_test_win.png" alt="Installation Windows step 15" width="450" height="302" />
+	</figure>
+
 
 ## Installing (Linux &#8211; Ubuntu)
 
-  1. Plug it. That&#8217;s it! a new device probably called /dev/ttyACM0 will be added by the OS.
+1. Plug it. That&#8217;s it! a new device probably called /dev/ttyACM0 will be added by the OS.
 
 
 
 ## Testing (Linux &#8211; Ubuntu)
 
-  1. Open gtkterm if you don&#8217;t have it installed type &#8220;sudo apt-get install gtkterm&#8221; from a terminal
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket01_linux.png" alt="Testing Linux step 1" width="450" height="294" />
-</p>
+1. Open gtkterm if you don&#8217;t have it installed type &#8220;sudo apt-get install gtkterm&#8221; from a terminal
 
-  2. Go to Configuration -> Port, set the port to /dev/ttyACM0, the speed to 115200 and click OK
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket02_linux.png" alt="Testing Linux step 2" width="450" height="234" />
-</p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket01_linux.png" alt="Testing Linux step 1" width="450" height="294" />
+	</figure>
 
-  3. Select Configuration -> Local echo
-  4. Type the command and press enter
-<p style="text-align: center;">
-  <img class="aligncenter" src="http://www.alfersoft.com.ar/files/usocket/pictures/screenshots/usocket03_linux.png" alt="Testing Linux step 3" width="450" height="294" />
-</p>
+2. Go to Configuration -> Port, set the port to /dev/ttyACM0, the speed to 115200 and click OK
 
-<p style="text-align: center;">
-  </ol> 
-  
-  <h2>
-    Problem
-  </h2>
-  
-  <p>
-    After I mounted everything in the case a problem appeared, if I plug the USB cable to the computer and then the socket to the wall, the PIC hangs. But it works well the other way round (first plug to the wall and the to the computer). That is probably because the high voltage cables are too close to the PIC and unfortunatelly I&#8217;m not an expert in that matter and I don&#8217;t know how to fix it except by putting the circuit in a separated box. Experts needed! If you know another way to fix it please let me know!
-  </p>
-  
-  <h2>
-    Pictures
-  </h2>
-  
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/usocket/pictures/proto01.jpg" alt="Prototype" width="450" height="338" />
-  </p>
-  
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/usocket/pictures/proto05.jpg" alt="Prototype" width="450" height="338" />
-  </p>
-  
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/usocket/pictures/board02.jpg" alt="Board" width="450" height="338" />
-  </p>
-  
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/usocket/pictures/board04.jpg" alt="Board" width="450" height="338" />
-  </p>
-  
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/usocket/pictures/case01.jpg" alt="Case" width="450" height="338" />
-  </p>
-  
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/usocket/pictures/case02.jpg" alt="Case" width="450" height="338" />
-  </p>
-  
-  <h2>
-    Download
-  </h2>
-  
-  <p>
-    <a title="USocket Project" href="http://www.alfersoft.com.ar/files/usocket/usocket.zip">Link to download USocket project</a>, enjoy it!
-  </p>
-  
-  <p>
-  </p>
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket02_linux.png" alt="Testing Linux step 2" width="450" height="234" />
+	</figure>
+
+3. Select Configuration -> Local echo
+
+4. Type the command and press enter
+
+	<figure>
+		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket03_linux.png" alt="Testing Linux step 3" width="450" height="294" />
+	</figure>
+
+
+## Problem
+
+After I mounted everything in the case a problem appeared, if I plug the USB cable to the computer and then the socket to the wall, the PIC hangs. But it works well the other way round (first plug to the wall and the to the computer). That is probably because the high voltage cables are too close to the PIC and unfortunatelly I&#8217;m not an expert in that matter and I don&#8217;t know how to fix it except by putting the circuit in a separated box. Experts needed! If you know another way to fix it please let me know!
+
+
+## Pictures
+
+<figure class="third">
+	<a title="Prototype" href="{{ site.url }}/images/usocket/proto01.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/proto01.jpg" alt="Prototype" width="450" height="338" /></a>
+	<a title="Prototype" href="{{ site.url }}/images/usocket/proto05.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/proto05.jpg" alt="Prototype" width="450" height="338" /></a>
+	<a title="Board" href="{{ site.url }}/images/usocket/board02.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/board02.jpg" alt="Board" width="450" height="338" /></a>
+</figure>
+<figure class="third">
+	<a title="Board" href="{{ site.url }}/images/usocket/board04.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/board04.jpg" alt="Board" width="450" height="338" /></a>
+	<a title="Case" href="{{ site.url }}/images/usocket/case01.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/case01.jpg" alt="Case" width="450" height="338" /></a>
+	<a title="Case" href="{{ site.url }}/images/usocket/case02.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/case02.jpg" alt="Case" width="450" height="338" /></a>
+</figure>
+
+
+## Download
+
+<a title="USocket on GitHub" markdown="0" href="https://github.com/fvicente/usocket/archive/master.zip" class="btn">Download USocket Source</a>
+
+<a title="USocket on GitHub" href="https://github.com/fvicente/usocket">USocket on GitHub</a>, enjoy it!
