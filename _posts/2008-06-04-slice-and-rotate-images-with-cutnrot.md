@@ -18,39 +18,24 @@ tags:
   - wxpython
 comments: true
 ---
-<div id="wikicontent" style="padding: 0pt 3em 1.2em 0pt;">
-  <p>
-    <img src="http://www.alfersoft.com.ar/files/cutnrot.jpg" alt="Cut and Rotate" width="400" height="150" />
-  </p>
-  
-  <p>
-    Today I&#8217;m introducing another utility script written in python that uses wxPython to edit your scanned images (JPEG, BMP, TIFF, etc.) obtain sub-images, rotate and save them.
-  </p>
-  
-  <p>
-    <!--more-->This first version is very basic but effective, there is no necessity of learning complex commands or image handling programs, just:
-  </p>
-  
-  <ul>
-    <li>
-      click in the upper-left corner
-    </li>
-    <li>
-      click in the lower-right corner
-    </li>
-    <li>
-      rotate if you wish
-    </li>
-    <li>
-      close and save
-    </li>
-  </ul>
-</div>
+<figure>
+	<img src="{{ site.url }}/images/cutnrot.jpg">
+</figure>
+Today I&#8217;m introducing another utility script written in python that uses wxPython to edit your scanned images (JPEG, BMP, TIFF, etc.) obtain sub-images, rotate and save them.
 
-<div id="wikicontent" style="padding: 0pt 3em 1.2em 0pt;">
-  The unfortunate name of this script is cutnrot 😀 and it is released under BSD license, download, modify and use it at your own risk, as usual. <a title="Cut And Rotate" href="http://code.google.com/p/cutnrot/" target="_blank">Here is the Google Code page for this tiny project.</a>
-</div>
+<!--more-->
 
-<div style="padding: 0pt 3em 1.2em 0pt;">
-  <a title="cutnrot Windows Binaries" href="http://cutnrot.googlecode.com/files/cutnrot_win32_bin.zip">Download Windows Binaries</a> generated with <a title="py2exe" href="http://www.py2exe.org/" target="_blank">py2exe</a> for those that does not have a Python interpreter and/or wxPython installed.
-</div>
+This first version is very basic but effective, there is no necessity of learning complex commands or image handling programs, just:
+
+* click in the upper-left corner
+* click in the lower-right corner
+* rotate if you wish
+* close and save
+
+The unfortunate name of this script is **cutnrot** 😀 and it is released under BSD license, download, modify and use it at your own risk, as usual.
+
+<a title="Cut And Rotate" markdown="0" href="http://code.google.com/p/cutnrot/archive/master.zip" class="btn">Download Source</a>
+
+<a title="cutnrot Windows Binaries" markdown="0" href="{{ site.url }}/files/cutnrot_win32_bin.zip" class="btn">Download Windows Binaries</a>
+
+Windows binaries generated with <a title="py2exe" href="http://www.py2exe.org/" target="_blank">py2exe</a> for those that does not have a Python interpreter and/or wxPython installed.

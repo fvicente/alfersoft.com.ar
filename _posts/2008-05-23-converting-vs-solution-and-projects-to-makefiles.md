@@ -26,22 +26,29 @@ The class Sln2Make does all the work, parses the sln and vcproj files and genera
 
 where:
 
-  * slnpath is the path to the solution file
-  * exlist an optional list of files to exclude, optionally you can pass the content of an alternative make file using this syntax: [[dest, make\_all\_replacement, make\_clean\_replacement], &#8230;]
-  * dirrepl a list of directory replacement rules
-  * librepl library name replacement rules (when win library name doesn&#8217;t match OS&#8217;s library name)
+  * **slnpath** is the path to the solution file
+  * **exlist** an optional list of files to exclude, optionally you can pass the content of an alternative make file using this syntax: [[dest, make\_all\_replacement, make\_clean\_replacement], &#8230;]
+  * **dirrepl** a list of directory replacement rules
+  * **librepl** library name replacement rules (when win library name doesn&#8217;t match OS&#8217;s library name)
 
 example:
 
-<pre class="brush: python; title: ; notranslate" title="">exlist = [('../extsrc/zlib/projects/visualc6/Makefile.ag',
-'	$(MAKE) -C $(dir_root)extsrc/zlib -f Makefile libz.a\n',
-'	$(MAKE) -C $(dir_root)extsrc/zlib -f Makefile clean\n')]
+{% highlight python %}
+exlist = [
+    (
+        '../extsrc/zlib/projects/visualc6/Makefile.ag',
+        '$(MAKE) -C $(dir_root)extsrc/zlib -f Makefile libz.a\n',
+        '$(MAKE) -C $(dir_root)extsrc/zlib -f Makefile clean\n'
+    )
+]
 dirrepl = [['winnt', 'linux']]
 librepl = [['zlib', 'z'], ['nspr', 'nspr4 -lplc4 -lplds4']]
 #
 Sln2Make("../winnt/test.sln", exlist, dirrepl, librepl)
-</pre>
+{% endhighlight %}
 
 To correct the path case, I&#8217;ve used a script published by Moshe Zadka [here](http://mail.python.org/pipermail/python-list/2000-June/038502.html "Case Correction in Python").
-  
- [Download sln2make here](http://www.alfersoft.com.ar/files/sln2make.zip "sln2make"). Use this code at your own risk, it is released under BSD license.
+
+Use this code at your own risk, it is released under BSD license.
+
+<a title="sln2scons on GitHub" markdown="0" href="https://github.com/fvicente/sln2make/archive/master.zip" class="btn">Download Source Code</a>
