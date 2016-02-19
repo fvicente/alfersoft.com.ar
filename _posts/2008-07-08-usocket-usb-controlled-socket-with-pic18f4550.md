@@ -317,6 +317,15 @@ After I mounted everything in the case a problem appeared, if I plug the USB cab
 </figure>
 
 
+## Update
+
+Here is a small modification to read the current relay state:
+Add two diodes one from pin 19 to 33 and the other from pin 20 to 34. Use the command *B to read the status.
+<figure>
+	<img class="aligncenter" src="{{ site.url }}/images/usocket/mod.png" alt="Mod" width="450" height="294" />
+</figure>
+
+
 ## Download
 
 <a title="USocket on GitHub" markdown="0" href="https://github.com/fvicente/usocket/archive/master.zip" class="btn">Download USocket Source</a>
