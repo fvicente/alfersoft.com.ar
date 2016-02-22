@@ -10,6 +10,8 @@ Using **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** Jekyll
 # apt-get update
 # apt-get install ruby-full rubygems
 # gem install jekyll
+# pip install Pygments
+# gem install pygments.rb
 ```
 
 *First time clone*

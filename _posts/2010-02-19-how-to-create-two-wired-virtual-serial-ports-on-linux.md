@@ -21,64 +21,27 @@ tags:
   - wired
 comments: true
 ---
-<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
+<figure>
+	<img src="{{ site.url }}/images/question.png">
+	<figcaption>Photo Credit: <a href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
+</figure>
 
 To create two bridged virtual serial ports use the following command:
-  
-`<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
 
-To create two bridged virtual serial ports use the following command:
-  
-` 
+{% highlight bash %}
+socat -d -d pty,raw,echo=0 pty,raw,echo=0
+{% endhighlight %}
 
 The output will show you which are the virtual ports (or pseudo terminals) created, e.g.:
-  
-``<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
 
-To create two bridged virtual serial ports use the following command:
-  
-`<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
-
-To create two bridged virtual serial ports use the following command:
-  
-` 
-
-The output will show you which are the virtual ports (or pseudo terminals) created, e.g.:
-  
-`` 
+{% highlight bash %}
+2010/02/19 16:16:33 socat[9662] N PTY is /dev/pts/3
+2010/02/19 16:16:33 socat[9662] N PTY is /dev/pts/4
+2010/02/19 16:16:33 socat[9662] N starting data transfer loop with FDs [3,3] and [5,5]
+{% endhighlight %}
 
 Note: if you are using Ubuntu and you do not have this command, try:
-  
-```<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
 
-To create two bridged virtual serial ports use the following command:
-  
-`<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
-
-To create two bridged virtual serial ports use the following command:
-  
-` 
-
-The output will show you which are the virtual ports (or pseudo terminals) created, e.g.:
-  
-``<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
-
-To create two bridged virtual serial ports use the following command:
-  
-`<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
-
-To create two bridged virtual serial ports use the following command:
-  
-` 
-
-The output will show you which are the virtual ports (or pseudo terminals) created, e.g.:
-  
-`` 
-
-Note: if you are using Ubuntu and you do not have this command, try:
-  
-``` 
-
-<!--more-->
-
-###### <a title="Lock" href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" target="_blank">Image source</a>
+{% highlight bash %}
+sudo apt-get install socat
+{% endhighlight %}

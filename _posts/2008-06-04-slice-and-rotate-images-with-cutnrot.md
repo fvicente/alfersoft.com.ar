@@ -34,7 +34,9 @@ This first version is very basic but effective, there is no necessity of learnin
 
 The unfortunate name of this script is **cutnrot** 😀 and it is released under BSD license, download, modify and use it at your own risk, as usual.
 
-<a title="Cut And Rotate" markdown="0" href="http://code.google.com/p/cutnrot/archive/master.zip" class="btn">Download Source</a>
+<a title="Download Cut And Rotate" markdown="0" href="https://github.com/fvicente/cutnrot/archive/master.zip" class="btn">Download Source Code</a>
+
+[cutnrot on GitHub](https://github.com/fvicente/cutnrot/ "cutnrot on GitHub"){:target="_blank"}
 
 <a title="cutnrot Windows Binaries" markdown="0" href="{{ site.url }}/files/cutnrot_win32_bin.zip" class="btn">Download Windows Binaries</a>
 

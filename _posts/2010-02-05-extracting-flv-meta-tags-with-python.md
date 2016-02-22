@@ -16,12 +16,14 @@ tags:
   - video
 comments: true
 ---
-I&#8217;ve stolen this code from <a href="http://code.activestate.com/recipes/457406/" target="_blank">http://code.activestate.com/recipes/457406/</a> which in turn was stolen / ported from <a rel="nofollow" href="http://inlet-media.de/flvtool2">http://inlet-media.de/flvtool2 </a>, made some small fixes in bugs related to the date conversion function, object and array unmarshaling, file name hardcoded, etc&#8230; If you want to learn more about the FLV format and metatags read Acrobat&#8217;s <a title="Video File Format Specification Version 10" href="http://www.adobe.com/devnet/flv/pdf/video_file_format_spec_v10.pdf" target="_blank">Video File Format Specification Version 10</a>
+I&#8217;ve stolen this code from <a href="http://code.activestate.com/recipes/457406/" target="_blank">http://code.activestate.com/recipes/457406/</a> which in turn was stolen / ported from <a rel="nofollow" href="http://inlet-media.de/flvtool2">http://inlet-media.de/flvtool2</a>, made some small fixes in bugs related to the date conversion function, object and array unmarshaling, file name hardcoded, etc&#8230; If you want to learn more about the FLV format and metatags read Acrobat&#8217;s <a title="Video File Format Specification Version 10" href="http://www.adobe.com/devnet/flv/pdf/video_file_format_spec_v10.pdf" target="_blank">Video File Format Specification Version 10</a>
   
 <!--more-->
 
-<pre class="brush: python; title: ; notranslate" title="">from struct import unpack
+{% highlight python %}
+from struct import unpack
 from datetime import datetime
+
 
 class FLVReader(dict):
     """
@@ -51,17 +53,17 @@ class FLVReader(dict):
         self.readtag()
 
     def readtag(self):
-        unknown = self.readint()
+        self.readint()  # unknown
         tagType = self.readbyte()
-        dataSize = self.read24bit()
-        timeStamp = self.read24bit()
-        unknown = self.readint()
+        self.read24bit()  # dataSize
+        self.read24bit()  # timeStamp
+        self.readint()  # unknown
         if tagType == self.AUDIO:
             print "Can't handle audio tags yet"
         elif tagType == self.VIDEO:
             print "Can't handle video tags yet"
         elif tagType == self.META:
-            endpos = self.file.tell() + dataSize
+            # endpos = self.file.tell() + dataSize
             self.event = self.readAMFData()
             metaData = self.readAMFData()
             # We got the meta data.
@@ -72,20 +74,20 @@ class FLVReader(dict):
             print "Can't handle undefined tags yet"
 
     def readint(self):
-      data = self.file.read(4)
-      return unpack('&gt;I', data)[0]
+        data = self.file.read(4)
+        return unpack('>I', data)[0]
 
     def readshort(self):
-      data = self.file.read(2)
-      return unpack('&gt;H', data)[0]
+        data = self.file.read(2)
+        return unpack('>H', data)[0]
 
     def readbyte(self):
-      data = self.file.read(1)
-      return unpack('B', data)[0]
+        data = self.file.read(1)
+        return unpack('B', data)[0]
 
     def read24bit(self):
-      b1, b2, b3 = unpack('3B', self.file.read(3))
-      return (b1 &lt;&lt; 16) + (b2 &lt;&lt; 8 ) + b3
+        b1, b2, b3 = unpack('3B', self.file.read(3))
+        return (b1 << 16) + (b2 << 8) + b3
 
     def readAMFData(self, dataType=None):
         if dataType is None:
@@ -96,15 +98,15 @@ class FLVReader(dict):
             2: self.readAMFString,
             3: self.readAMFObject,
             8: self.readAMFMixedArray,
-           10: self.readAMFArray,
-           11: self.readAMFDate
+            10: self.readAMFArray,
+            11: self.readAMFDate
         }
         func = funcs[dataType]
         if callable(func):
             return func()
 
     def readAMFDouble(self):
-        return unpack('&gt;d', self.file.read(8))[0]
+        return unpack('>d', self.file.read(8))[0]
 
     def readAMFBoolean(self):
         return self.readbyte() == 1
@@ -130,7 +132,7 @@ class FLVReader(dict):
         size = self.readint()
         result = {}
         i = 0
-        while i &lt; size:
+        while i < size:
             key = self.readAMFString()
             dataType = self.readbyte()
             if not key and dataType == 9:
@@ -143,14 +145,14 @@ class FLVReader(dict):
         size = self.readint()
         result = []
         i = 0
-        while i &lt; size:
+        while i < size:
             result.append(self.readAMFData())
             i += 1
         return result
 
     def readAMFDate(self):
-        date = self.readAMFDouble()/1000
-        localoffset = self.readshort()
+        date = self.readAMFDouble() / 1000
+        self.readshort()  # localoffset
         return datetime.fromtimestamp(date)
 
 if __name__ == '__main__':
@@ -163,9 +165,9 @@ if __name__ == '__main__':
     for fn in sys.argv[1:]:
         x = FLVReader(fn)
         pprint(x)
-</pre>
+{% endhighlight %}
 
-Download this code snippet from <a title="flv.py" href="http://www.alfersoft.com.ar/files/flv.py" target="_blank">here</a>
+Download this code snippet from <a title="flv.py" href="https://gist.github.com/fvicente/d05e25b99c49e48e19b6" target="_blank">gist</a>
 
 <div id="_mcePaste" style="overflow: hidden; position: absolute; left: -10000px; top: 55px; width: 1px; height: 1px;">
   from&nbsp;struct&nbsp;import&nbsp;unpack<br /> from&nbsp;datetime&nbsp;import&nbsp;datetime</p> 

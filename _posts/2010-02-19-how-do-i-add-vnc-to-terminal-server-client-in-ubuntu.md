@@ -17,16 +17,13 @@ tags:
   - vnc
 comments: true
 ---
-<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
+<figure>
+	<img src="{{ site.url }}/images/question.png">
+	<figcaption>Photo Credit: <a href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
+</figure>
 
 From a terminal type:
-  
-`<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
 
-From a terminal type:
-  
-` 
-
-<!--more-->
-
-###### <a title="Lock" href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" target="_blank">Image source</a>
+{% highlight bash %}
+sudo apt-get install xtightvncviewer
+{% endhighlight %}

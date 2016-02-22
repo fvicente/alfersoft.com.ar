@@ -19,16 +19,15 @@ tags:
   - meld
 comments: true
 ---
-<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
+<figure>
+	<img src="{{ site.url }}/images/question.png">
+	<figcaption>Photo Credit: <a href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
+</figure>
 
 The easiest way I found is dumping the binaries into text files using hexdump and then comparing them with your favourite program (diff, Meld, etc.). E.g.:
-  
-`<img class="alignnone" title="FAQ" src="http://www.alfersoft.com.ar/files/question.png" alt="" width="48" height="48" />
 
-The easiest way I found is dumping the binaries into text files using hexdump and then comparing them with your favourite program (diff, Meld, etc.). E.g.:
-  
-` 
-
-<!--more-->
-
-###### <a title="Lock" href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" target="_blank">Image source</a>
+{% highlight bash %}
+hexdump -C a.bin >a.txt
+hexdump -C b.bin >b.txt
+diff a.txt b.txt
+{% endhighlight %}

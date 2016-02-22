@@ -52,7 +52,7 @@ I&#8217;ve tried this installation procedure on both [Debian 4 rc3](http://www.d
 
 First of all, install the Linux of your choice. If you got old hardware as I do, then I&#8217;ll recommend you Debian 4 NetInstall, because it will install just the software you want and will not fill your system memory with unused daemons. If your hardware is new (say an Intel Core2Duo or such) then go for Ubuntu, as it got more hardware support than Debian.
 
-Once you&#8217;ve your server up and running, open a console and do (if you don&#8217;t have it installed, do `aptitude install pciutils` as root), and you will see something like:
+Once you&#8217;ve your server up and running, open a console and do `lspci` (if you don&#8217;t have it installed, do `aptitude install pciutils` as root), and you will see something like:
 
 `00:0a.0 Communication controller: Tiger Jet Network Inc. Tiger3XX Modem/ISDN interface`
 

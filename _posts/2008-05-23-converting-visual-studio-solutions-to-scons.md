@@ -43,8 +43,10 @@ librepl = []
 Sln2SCons("../winnt/test.sln", exlist, dirrepl, librepl, "../")
 {% endhighlight %}
 
-To correct the path case, I&#8217;ve used a script published by Moshe Zadka [here](http://mail.python.org/pipermail/python-list/2000-June/038502.html "Case Correction in Python").
+To correct the path case, I&#8217;ve used a script published by Moshe Zadka [here](http://mail.python.org/pipermail/python-list/2000-June/038502.html "Case Correction in Python"){:target="_blank"}.
 
 Use this code at your own risk, it is released under BSD license.
 
-<a title="sln2scons on GitHub" markdown="0" href="https://github.com/fvicente/sln2scons/archive/master.zip" class="btn">Download Source Code</a>
+<a title="Download sln2scons" markdown="0" href="https://github.com/fvicente/sln2scons/archive/master.zip" class="btn">Download Source Code</a>
+
+[sln2scons on GitHub](https://github.com/fvicente/sln2scons "sln2scons on GitHub"){:target="_blank"}
