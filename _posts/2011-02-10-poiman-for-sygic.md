@@ -17,7 +17,7 @@ tags:
   - update
 comments: true
 ---
-[<img src="{{ site.url }}/images/poiman-256.png" alt="" title="POIMan for Sygic" width="100" height="100" />]({{ site.url }}/images/poiman-256.png)
+[<img src="{{ site.url }}/images/poiman-256.png" alt="" title="POIMan for Sygic" />]({{ site.url }}/images/poiman-256.png)
 
 POIMan for Sygic is an Android application that lets you keep your Sygic&#8217;s Point of Interests (POIs) up to date and manage them (add / remove) in an easy way.
 

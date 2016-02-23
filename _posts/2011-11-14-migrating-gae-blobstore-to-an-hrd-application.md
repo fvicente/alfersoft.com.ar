@@ -22,7 +22,9 @@ tags:
   - migration
 comments: true
 ---
-[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2011/11/google-app-engine_logo_0111.png" alt="Google App Engine" title="google app engine" width="150" height="150" class="alignleft size-full wp-image-301" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2011/11/google-app-engine_logo_0111.png)If you are planning to migrate your Google App Engine application to the &#8220;new&#8221; High Replication Database scheme, then you probably know that the Google migration process won&#8217;t handle Blobstore files.
+[<img src="{{ site.url }}/images/gae-logo.png" alt="Google App Engine" title="google app engine"/>]({{ site.url }}/images/gae-logo.png)
+
+If you are planning to migrate your Google App Engine application to the &#8220;new&#8221; High Replication Database scheme, then you probably know that the Google migration process won&#8217;t handle Blobstore files.
 
 Here you will find some python scripts that will help you to move the Blobstore files from the old application to the new one, and correct all the references in the new database. As always, use at your own risk, don&#8217;t try to do anything without reading and understanding the scripts, otherwise you may loose your data permanently.
 
@@ -30,29 +32,29 @@ Here you will find some python scripts that will help you to move the Blobstore 
 
 Some considerations:
 
-  * We did used these scripts in our very own application, so I can say it works. However, I had to edit the original scripts to make them more &#8220;generic&#8221;, remove my database references and names, etc.
-  * I will try to describe the steps of the migration, but please don&#8217;t try to do anything before reading the whole article first.
-  * This is not by any means intended to be a fully automatic migration, in fact, the steps needs to be manually executed one by one.
-  * **The scripts won&#8217;t migrate big files.** We have migrated files up to 40Mb without problems, but if you have files bigger than that, it will probably fail. For example we tried a 300Mb file unsuccessfully, the reason is that the file needs to be downloaded from the old app to the new, and there is a 1 minute timeout for the app requests, so if the download takes more than that it will fail.
+* We did used these scripts in our very own application, so I can say it works. However, I had to edit the original scripts to make them more &#8220;generic&#8221;, remove my database references and names, etc.
+* I will try to describe the steps of the migration, but please don&#8217;t try to do anything before reading the whole article first.
+* This is not by any means intended to be a fully automatic migration, in fact, the steps needs to be manually executed one by one.
+* **The scripts won&#8217;t migrate big files.** We have migrated files up to 40Mb without problems, but if you have files bigger than that, it will probably fail. For example we tried a 300Mb file unsuccessfully, the reason is that the file needs to be downloaded from the old app to the new, and there is a 1 minute timeout for the app requests, so if the download takes more than that it will fail.
 
-##### How does the script works
+### How does the script works
 
 You will need to put the script in your applications, both the new (HRD) and the old one. It basically exposes four URLs and you will need to access two of them from the HRD application.
-  
+
 By doing this you will download all the blob files from the old application to the new one, the script will create a model that keeps a map between the old and new references.
-  
+
 The final step is to migrate the old references to the new one in the HRD databases.
 
-##### Prerequisites
+### Prerequisites
 
-  * All the references to blob files in your models must be of type `blobstore.BlobReferenceProperty`, if not you will need to adjust them first.
-  * Migrate the databases from the old app to the new HRD app using the [standard Google migration method](http://code.google.com/appengine/docs/adminconsole/applicationsettings.html#Migrate_from_Master/Slave_to_High_Replication_Datastore "Google App Engine migrate datastore").
+* All the references to blob files in your models must be of type `blobstore.BlobReferenceProperty`, if not you will need to adjust them first.
+* Migrate the databases from the old app to the new HRD app using the [standard Google migration method](http://code.google.com/appengine/docs/adminconsole/applicationsettings.html#Migrate_from_Master/Slave_to_High_Replication_Datastore "Google App Engine migrate datastore").
 
-##### Steps
+### Steps
 
-  * Add the URLs to your application
+* Add the URLs to your application
 
-<pre><pre class="brush: python; title: ; notranslate" title="">
+{% highlight python %}
 def main():
     application = webapp.WSGIApplication(
           [
@@ -67,21 +69,11 @@ def main():
 
 if __name__ == '__main__':
   main()
-</pre>
+{% endhighlight %}
 
+* Then add the migration code
 
-<ul>
-  <li>
-    Then add the migration code
-  </li>
-  
-</ul>
-
-
-<pre>
-
-
-<pre class="brush: python; title: ; notranslate" title="">
+{% highlight python %}
 ####
 # TEMPORARY BLOBSTORE MIGRATION CODE
 ####
@@ -115,7 +107,7 @@ class MigrateBlobReferences(blobstore_handlers.BlobstoreDownloadHandler):
                 else:
                     skipped += 1
             db.put(to_put)
-            self.response.out.write("[%s] - Migrated %d references!&lt;br/&gt;Skipped: %d&lt;br/&gt;\n"%(modelname, len(to_put), skipped))
+            self.response.out.write("[%s] - Migrated %d references!<br/>Skipped: %d<br/>\n"%(modelname, len(to_put), skipped))
 
 class MigrateBlobs(blobstore_handlers.BlobstoreDownloadHandler):
     '''Migrate blobs from myoldapp to mynewapp'''
@@ -142,26 +134,26 @@ class MigrateBlobs(blobstore_handlers.BlobstoreDownloadHandler):
             with files.open(blob_path, 'a') as f:
                 for first_byte in range(0, fsize, MAXSIZE):
                     last_byte = (first_byte+MAXSIZE-1)
-                    if last_byte&gt;=fsize: last_byte=(fsize-1)
+                    if last_byte>=fsize: last_byte=(fsize-1)
                     bytes_range = "bytes=%d-%d"%(first_byte,last_byte)
                     logging.info("Downloading [%s] range [%s] key=[%s]"%(blob["filename"], bytes_range, origkey))
                     res = urlfetch.fetch(url, deadline=35.0, headers={"Range": bytes_range})
                     f.write(res.content)
                     del res.content
                     del res
-                    if (time.time()-start_time &gt; 40.0):
+                    if (time.time()-start_time > 40.0):
                         timed_out = True
                         break
             if timed_out:
-                self.response.out.write("Stopped due to time limit!&lt;br/&gt;")
+                self.response.out.write("Stopped due to time limit!<br/>")
                 break
             files.finalize(blob_path)
             blob_key = files.blobstore.get_blob_key(blob_path)
             blob_info = blobstore.BlobInfo.get(blob_key)
             mig_BlobMig(fname=blob["filename"], blobinfo=blob_info, origkey=origkey).put()
             logging.info("Successfully downloaded [%s]!!!"%(blob["filename"]))
-            self.response.out.write("Migrated %s&lt;br/&gt;"%blob["filename"])
-        self.response.out.write("&lt;br/&gt;SUCCESS!")
+            self.response.out.write("Migrated %s<br/>"%blob["filename"])
+        self.response.out.write("<br/>SUCCESS!")
 
 class GetBlobKeys(blobstore_handlers.BlobstoreDownloadHandler):
     '''Retrieve all Blob Keys, as a JSON string'''
@@ -192,47 +184,13 @@ class GetBlob(blobstore_handlers.BlobstoreDownloadHandler):
 ####
 # END OF TEMPORARY BLOBSTORE MIGRATION CODE
 ####
-</pre>
+{% endhighlight %}
 
+* Modify the `MODELS` variable adding the models and blob info fields that you need to update
+* Replace `myoldapp` URLs with the actual URL of your old application
+* Synchronize the code on both apps
+* Open a browser and point it to `http://mynewapp.appspot.com/mig/__migrateblobs`. Of course, `mynewapp` must be replaced with your actual HRD application name. This will download the blobs from the old app to the new one. Because there is a timeout limitation you will need to call it many times. **WARNING: You must make only one request at time, never call it from two browsers / tabs at the same time or you will mess the migration database!!!**. So this step must be carefully executed, one request at time and wait for it to finish before calling the next one. Repeat this until you see the message `Nothing to migrate!`. This step can be very slow depending on how many files you have in the blobstore and the size of them, it might take a long time to get all the files downloaded. Be patient!
+* Once all the files are copied to the new app, point the browser to `http://mynewapp.appspot.com/mig/__migratereferences`. Should be quick, and it needs to be executed only one time. However doesn&#8217;t harm to call it more than once.
+* The last step, remove the migration code and URLs and synchronize the code again. You can also remove the <code>mig_BlobMig</code> database.
 
-<ul>
-  <li>
-    Modify the <code>MODELS</code> variable adding the models and blob info fields that you need to update
-  </li>
-  
-  
-  <li>
-    Replace <code>myoldapp</code> URLs with the actual URL of your old application
-  </li>
-  
-  
-  <li>
-    Synchronize the code on both apps
-  </li>
-  
-  
-  <li>
-    Open a browser and point it to <code>http://mynewapp.appspot.com/mig/__migrateblobs</code>. Of course, <code>mynewapp</code> must be replaced with your actual HRD application name. This will download the blobs from the old app to the new one. Because there is a timeout limitation you will need to call it many times. <b>WARNING: You must make only one request at time, never call it from two browsers / tabs at the same time or you will mess the migration database!!!</b>. So this step must be carefully executed, one request at time and wait for it to finish before calling the next one. Repeat this until you see the message <code>Nothing to migrate!</code>. This step can be very slow depending on how many files you have in the blobstore and the size of them, it might take a long time to get all the files downloaded. Be patient!
-  </li>
-  
-  
-  <li>
-    Once all the files are copied to the new app, point the browser to <code>http://mynewapp.appspot.com/mig/__migratereferences</code>. Should be quick, and it needs to be executed only one time. However doesn&#8217;t harm to call it more than once.
-  </li>
-  
-  
-  <li>
-    The last step, remove the migration code and URLs and synchronize the code again. You can also remove the <code>mig_BlobMig</code> database.
-  </li>
-  
-</ul>
-
-
-<p>
-  Good migration.
-</p>
-
-
-<p>
-  
-</p>
+Good migration.

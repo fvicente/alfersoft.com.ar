@@ -20,10 +20,10 @@ tags:
   - upload
 comments: true
 ---
-<figure style="width: 441px" class="wp-caption alignnone">
-	<img title="Upload Progress with mod_python" src="{{ site.url }}/images/uprogress.jpg" alt="Upload Progress with mod_python" width="441" height="216" />
+<figure>
+	<img title="Upload Progress with mod_python" src="{{ site.url }}/images/uprogress.jpg" alt="Upload Progress with mod_python" />
 	<figcaption class="wp-caption-text">Upload Progress with mod_python</figcaption>
-</figure> 
+</figure>
 
 Now that Gmail has added a progress bar for attachment uploads, everybody wants to do the same including myself  😀 
 
@@ -50,8 +50,8 @@ Start by downloading the <a title="Source code for uprogress example" href="http
 The source is organized like the following illustration:
 
 <figure>
-	<img title="Upload Progress source directory structure" src="{{ site.url }}/images/uprogress_src.jpg" alt="Upload Progress source directory structure" width="372" height="360" />
-	<figcaption class="wp-caption-text">Upload Progress source directory structure</figcaption>
+	<img title="Upload Progress source directory structure" src="{{ site.url }}/images/uprogress_src.jpg" alt="Upload Progress source directory structure" />
+	<figcaption>Upload Progress source directory structure</figcaption>
 </figure> 
 
 **/src/img** contains images for JavaScript Bramus progress bar

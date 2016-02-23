@@ -17,7 +17,7 @@ comments: true
 ---
 Some quick thoughts about the <a href="http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove" title="Arduino Duemilanove Board" target="_blank">Arduino Duemilanove</a> board.
 
-[<img src="{{ site.url }}/images/duemilanove.jpg" alt="Duemilanove" title="Duemilanove" width="300"/>]({{ site.url }}/images/duemilanove.jpg)
+[<img src="{{ site.url }}/images/duemilanove.jpg" alt="Duemilanove" title="Duemilanove"/>]({{ site.url }}/images/duemilanove.jpg)
 
 <!--more-->
 
@@ -63,6 +63,6 @@ Finally, I would like to recommend this shield if you need an ISP programmer: <a
 
 I made it, it works and is great! really. With this shield you can convert your Arduino into an ISP programmer by loading the <a href="http://code.google.com/p/mega-isp/" title="mega-isp" target="_blank">mega-isp</a> &#8220;sketch&#8221;.
 
-[<img src="{{ site.url }}/images/mega_isp_shield.jpg" alt="Mega-ISP Shield" title="Mega-ISP Shield" width="300"/>]({{ site.url }}/images/mega_isp_shield.jpg)
+[<img src="{{ site.url }}/images/mega_isp_shield.jpg" alt="Mega-ISP Shield" title="Mega-ISP Shield"/>]({{ site.url }}/images/mega_isp_shield.jpg)
 
 As a side note, you will notice that you won&#8217;t be able to create a shield using the regular perforated boards, because of the pin alignment. Unless you only need pins 1 to 7 Xor 8 to 13 from the D port.

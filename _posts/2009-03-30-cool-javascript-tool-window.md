@@ -18,7 +18,7 @@ tags:
   - window
 comments: true
 ---
-<figure style="width: 299px" class="wp-caption alignnone">
+<figure>
 	<img title="Tool Window" src="{{ site.url }}/images/toolwindow.jpg" alt="Tool Window"/>
 	<figcaption>Tool Window</figcaption>
 </figure> 

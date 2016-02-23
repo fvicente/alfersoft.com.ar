@@ -747,3 +747,25 @@ $button-size: 1.5rem;
 #goog-wm-sb {
 	@extend .btn;
 }
+
+/*
+   Tables
+   ========================================================================== */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid #777;
+}
+
+th {
+    border: 1px solid #777;
+}
+
+td {
+    border: 1px solid #777;
+    padding: 2px 4px;
+    a {
+        text-decoration: underline;
+    }
+}
