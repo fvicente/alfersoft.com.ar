@@ -4,10 +4,10 @@ title: About AlferSoft
 tags: [about, AlferSoft, software, electronics, hobby]
 modified: 2016-02-17T00:00:00.000000-03:00
 comments: true
-image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+# image:
+#   feature: sample-image-2.jpg
+#   credit: WeGraphics
+#   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
 AlferSoft is a blog with random stuff about software development, electronics, hardware and whatever we want to write about, or we find difficult to catch on the Internet.
