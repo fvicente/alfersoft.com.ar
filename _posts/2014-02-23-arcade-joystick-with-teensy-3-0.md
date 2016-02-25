@@ -26,27 +26,74 @@ The firmware emulates an USB keyboard, so all you have to do is connect the swit
 Joystick switches emulates the arrow keys, and the buttons, well, you need to program them to whatever fits better for your games, in my case [Enter], [Space], [Left Alt] and [Z] did the trick for Super Frog HD. I should think in putting an internal switch to change the button&#8217;s configuration to something more standard like the MAME layout.
 
 Just for reference, this is the list of materials I&#8217;ve used for this project:
-  
-[table id=1 /]
 
-**The Code**
+Qty|Name|Link|Price (U$S)|
+--:|----|----|----------:|
+1|Teensy 3.0|<a href="http://www.pjrc.com/store/teensy3.html" target="_blank">www.pjrc.com</a>|19.00|
+1|4-Ways Red Ball Arcade Joystick with 4-Switch|<a href="http://dx.com/p/repair-parts-replacement-4-ways-red-ball-arcade-joystick-with-4-switch-37485#.UwqIFnkWyao" target="_blank">dx.com</a>|11.55|
+4|Arcade Joystick Button|<a href="http://dx.com/p/sanwa-obsf-30-arcade-joystick-button-black-231437#.UwqIGnkWyao" target="_blank">dx.com</a> and <a href="http://dx.com/p/sanwa-obsf-30-arcade-joystick-button-white-231350#.UwqIG3kWyao" target="_blank">dx.com</a>|3.59 each|
+1|Box|-||
+
+## The Code
 
 Of course, I am using the existing Teensy USB keyboard libraries, so the code is pretty simple &#8211; 32 lines of code.
-  
+
+{% highlight cpp %}
+/* Arcade Keyboard-Joystick */
+
+#include <usb_keyboard.h>
+
+#define NUM_BUTTONS 8
+int keys[NUM_BUTTONS] = {KEY_RIGHT, KEY_UP, KEY_DOWN, KEY_LEFT, KEY_ENTER, KEY_SPACE, KEY_LEFT_ALT, KEY_Z};
+int mask = 0;
+int i = 0;
+
+void setup() {
+	for (i = 0; i < NUM_BUTTONS; i++) {
+		pinMode(i, INPUT_PULLUP);
+	}
+	delay(1000);
+}
+
+void loop() {
+	for (i = 0; i < NUM_BUTTONS; i++) {
+		if (digitalRead(i) == LOW) {
+			if (!(mask & (1 << i))) {
+				Keyboard.press(keys[i] | (0x40 << 8));
+				mask |= (1 << i);
+			}
+		} else {
+			if ((mask & (1 << i))) {
+				Keyboard.release(keys[i] | (0x40 << 8));
+				mask &= ~(1 << i);
+			}
+		}
+	}
+	delay(2);
+}
+{% endhighlight %}
+
 [See joystick.ino on gist](https://gist.github.com/fvicente/515d08aabf5616f710cd)
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/fvicente/515d08aabf5616f710cd">Gist</a>.
-  </noscript>
-</div>
-
-**Connection Diagram**
+## Connection Diagram
 
 No explanation needed<figure id="attachment_700" style="width: 300px" class="wp-caption aligncenter">
 
-[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-300x300.png" alt="Joystick Connection Diagram" width="300" height="300" class="size-medium wp-image-700" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-150x150.png 150w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-300x300.png 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-700x700.png 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-332x332.png 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-432x432.png 432w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick-268x268.png 268w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick.png 768w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/joystick.png)<figcaption class="wp-caption-text">Joystick Connection Diagram</figcaption></figure> 
+<figure style="text-align: center;">
+	<a href="{{ site.url }}/images/joystick.png" target="_blank"><img src="{{ site.url }}/images/joystick.png" alt="Joystick Connection Diagram" title="Joystick Connection Diagram"/></a>
+	<figcaption class="wp-caption-text">Joystick Connection Diagram</figcaption>
+</figure> 
 
-**Pictures**<figure id="attachment_692" style="width: 300px" class="wp-caption aligncenter">
+## Pictures
 
-[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2559-300x225.jpg" alt="Joystick connections" width="300" height="225" class="size-medium wp-image-692" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2559-300x225.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2559-700x525.jpg 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2559-332x249.jpg 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2559.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2559.jpg)<figcaption class="wp-caption-text">Joystick connections</figcaption></figure> <figure id="attachment_693" style="width: 300px" class="wp-caption aligncenter">[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2562-300x225.jpg" alt="Box holes" width="300" height="225" class="size-medium wp-image-693" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2562-300x225.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2562-700x525.jpg 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2562-332x249.jpg 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2562.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2562.jpg)<figcaption class="wp-caption-text">Box holes</figcaption></figure> <figure id="attachment_697" style="width: 300px" class="wp-caption aligncenter">[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2583-300x225.jpg" alt="Inside Joystick" width="300" height="225" class="size-medium wp-image-697" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2583-300x225.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2583-700x525.jpg 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2583-332x249.jpg 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2583.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2583.jpg)<figcaption class="wp-caption-text">Inside Joystick</figcaption></figure> <figure id="attachment_695" style="width: 300px" class="wp-caption aligncenter">[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2579-300x225.jpg" alt="Inside Joystick" width="300" height="225" class="size-medium wp-image-695" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2579-300x225.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2579-700x525.jpg 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2579-332x249.jpg 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2579.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2579.jpg)<figcaption class="wp-caption-text">Inside Joystick</figcaption></figure> <figure id="attachment_696" style="width: 300px" class="wp-caption aligncenter">[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2581-300x225.jpg" alt="Joystick" width="300" height="225" class="size-medium wp-image-696" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2581-300x225.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2581-700x525.jpg 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2581-332x249.jpg 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2581.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2581.jpg)<figcaption class="wp-caption-text">Joystick</figcaption></figure> <figure id="attachment_694" style="width: 300px" class="wp-caption aligncenter">[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2566-300x225.jpg" alt="Joystick testing with uncle Alf" width="300" height="225" class="size-medium wp-image-694" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2566-300x225.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2566-700x525.jpg 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2566-332x249.jpg 332w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2566.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2014/02/IMG_2566.jpg)<figcaption class="wp-caption-text">Joystick testing with uncle Alf</figcaption></figure>
+<figure class="third">
+	<a title="Joystick connections" href="{{ site.url }}/images/joystick_01.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_01.jpg" alt="Joystick connections" /></a>
+	<a title="Box holes" href="{{ site.url }}/images/joystick_02.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_02.jpg" alt="Box holes" /></a>
+	<a title="Inside Joystick" href="{{ site.url }}/images/joystick_03.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_03.jpg" alt="Inside Joystick" /></a>
+</figure>
+
+<figure class="third">
+	<a title="Inside Joystick" href="{{ site.url }}/images/joystick_04.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_04.jpg" alt="Inside Joystick" /></a>
+	<a title="Joystick" href="{{ site.url }}/images/joystick_05.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_05.jpg" alt="Joystick" /></a>
+	<a title="Joystick testing with uncle Alf" href="{{ site.url }}/images/joystick_06.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_06.jpg" alt="Joystick testing with uncle Alf" /></a>
+</figure>

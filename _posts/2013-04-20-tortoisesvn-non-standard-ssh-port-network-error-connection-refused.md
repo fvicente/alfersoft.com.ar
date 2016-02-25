@@ -18,18 +18,18 @@ tags:
   - windows
 comments: true
 ---
-[<img src="http://www.alfersoft.com.ar/blog/wp-content/uploads/2013/04/spongebob-300x227.jpg" alt="spongebob" width="300" height="227" class="aligncenter size-medium wp-image-592" srcset="http://www.alfersoft.com.ar/blog/wp-content/uploads/2013/04/spongebob-300x227.jpg 300w, http://www.alfersoft.com.ar/blog/wp-content/uploads/2013/04/spongebob.jpg 400w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.alfersoft.com.ar/blog/wp-content/uploads/2013/04/spongebob.jpg)
+[<img src="{{ site.url }}/images/spongebob.jpg" alt="spongebob"/>]({{ site.url }}/images/spongebob.jpg)
 
 <!--more-->
 
-
-  
 Another reminder. TortoiseSVN, non-standard SSH port, Network Error: Connection Refused.
 
-  * Edit C:\Users\user\AppData\Roaming\Subversion\config
-  * Under [tunnels] section add:
-  
-    ssh = TortoisePlink.exe -v -P _**NNNN**_
-  
-    (where _**NNNN**_ is the non-standard port)
-  * Proceed to checkout your project normally using SVN+SSH, like `svn+ssh://user@myserver:NNNN/svn/project`
+* Edit C:\Users\user\AppData\Roaming\Subversion\config
+* Under [tunnels] section add:
+
+{% highlight INI %}
+ssh = TortoisePlink.exe -v -P NNNN
+{% endhighlight %}
+(where _**NNNN**_ is the non-standard port)
+
+* Proceed to checkout your project normally using SVN+SSH, like `svn+ssh://user@myserver:NNNN/svn/project`

@@ -20,14 +20,18 @@ comments: true
 ---
 <!--more-->
 
-
-  
 Open find/replace dialog and check &#8216;Regular expressions&#8217;
 
 Find:
 
-<pre>\{\% trans \%\}([^\{]*)\{\% endtrans \%\}</pre>
+{% highlight bash %}
+\{\% trans \%\}([^\{]*)\{\% endtrans \%\}
+{% endhighlight %}
 
 Replace with:
 
-<pre>{{ gettext('$1') }}</pre>
+{% highlight bash %}
+{% raw  %}
+{{ gettext('$1') }}
+{% endraw %}
+{% endhighlight %}
