@@ -3,7 +3,7 @@
 title:            AlferSoft Blog
 locale:           en_US
 baseurl:          /blog
-url:
+url:              http://www.alfersoft.com.ar/blog
 
 
 # Jekyll configuration
