@@ -25,14 +25,6 @@ Using **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** Jekyll
 # bundle install
 ```
 
-*Run local*
-
-```
-$ cd ~/workspace/alfersoft.com.ar/   (or wherever you've checked out the code)
-$ jekyll build
-$ jekyll serve
-```
-
 *Update posts*
 
 ```
@@ -42,3 +34,14 @@ $ jekyll serve
 # cp -R _site/* ../www/blog/
 # chown -R www-data:www-data ../www/blog
 ```
+
+### Not root, this is your local machine
+
+*Run local*
+
+```
+$ cd ~/workspace/alfersoft.com.ar/   (or wherever you've checked out the code)
+$ jekyll build
+$ jekyll serve
+```
+
