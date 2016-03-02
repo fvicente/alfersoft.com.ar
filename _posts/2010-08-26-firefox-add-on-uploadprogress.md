@@ -20,7 +20,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img alt="UploadProgress add-on" src="{{ site.url }}/images/upload.png" title="UploadProgress add-on">
+	<img alt="UploadProgress add-on" src="{{ site.baseurl }}/images/upload.png" title="UploadProgress add-on">
 </figure>
 
 This Firefox add-on adds a new option to the Tools menu called &#8220;Uploads&#8221; that displays a small window, similar to the downloads, but displaying only current uploads in progress. The uploads are automatically removed from the window after they finish. The idea is to have a way to know the progress of your file uploads and an estimated remaining time to finish.

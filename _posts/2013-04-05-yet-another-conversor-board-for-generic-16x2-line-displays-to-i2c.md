@@ -20,7 +20,7 @@ tags:
   - module
 comments: true
 ---
-<a href="{{ site.url }}/images/lcd_i2c.jpg" target="_blank"><img src="{{ site.url }}/images/lcd_i2c.jpg" alt="LCD to I2C" title="LCD to I2C"/></a>
+<a href="{{ site.baseurl }}/images/lcd_i2c.jpg" target="_blank"><img src="{{ site.baseurl }}/images/lcd_i2c.jpg" alt="LCD to I2C" title="LCD to I2C"/></a>
 
 If you are trying to convert your 16&#215;2 display to I<sup>2</sup>C, you&#8217;ve probably googled and found many resources on the Internet. But if you happen to have a MGD1602B series LCD module, this may be your lucky day, because I&#8217;ve already designed a board in Eagle Cad for this purpose. Keep reading and download converter schematic and board. All for free, as (almost) always. Bonus: Eagle Cad library (.lbr) for this LCD module.
 
@@ -37,24 +37,24 @@ This generic 16&#215;2 module has the following pinout. Please always verify if 
 The + and &#8211; are pins 15 and 16 respectively.
 
 <figure style="text-align: center;">
-	<a href="{{ site.url }}/images/lcd_i2c_01.png" target="_blank"><img src="{{ site.url }}/images/lcd_i2c_01.png" alt="MGD1602B Pinout" title="MGD1602B Pinout"/></a>
+	<a href="{{ site.baseurl }}/images/lcd_i2c_01.png" target="_blank"><img src="{{ site.baseurl }}/images/lcd_i2c_01.png" alt="MGD1602B Pinout" title="MGD1602B Pinout"/></a>
 	<figcaption>MGD1602B Pinout</figcaption>
 </figure>
 
 In this peculiar LCD pins 15 and 16 are not following the linear order of the rest of the pins from 1 to 14!
 
 <figure style="text-align: center;">
-	<a href="{{ site.url }}/images/lcd_i2c_02.png" target="_blank"><img src="{{ site.url }}/images/lcd_i2c_02.png" alt="MGD1602B Pin distribution" title="MGD1602B Pin distribution"/></a>
+	<a href="{{ site.baseurl }}/images/lcd_i2c_02.png" target="_blank"><img src="{{ site.baseurl }}/images/lcd_i2c_02.png" alt="MGD1602B Pin distribution" title="MGD1602B Pin distribution"/></a>
 	<figcaption>MGD1602B Pin distribution</figcaption>
 </figure>
 
-And here is the [MGD1602B-NS(W)-BBS BACK AZUL Datasheet]({{ site.url }}/files/datasheets/MGD1602B-NSW-BBS-BACK-AZUL.pdf), just in case.
+And here is the [MGD1602B-NS(W)-BBS BACK AZUL Datasheet]({{ site.baseurl }}/files/datasheets/MGD1602B-NSW-BBS-BACK-AZUL.pdf), just in case.
 
 ## Converter board
 
 <figure class="half">
-	<a href="{{ site.url }}/images/lcd_i2c_schematic.png" target="_blank"><img src="{{ site.url }}/images/lcd_i2c_schematic.png" alt="Converter Schematic" title="Converter Schematic"/></a>
-	<a href="{{ site.url }}/images/lcd_i2c_board.png" target="_blank"><img src="{{ site.url }}/images/lcd_i2c_board.png" alt="Converter Board" title="Converter Board"/></a>
+	<a href="{{ site.baseurl }}/images/lcd_i2c_schematic.png" target="_blank"><img src="{{ site.baseurl }}/images/lcd_i2c_schematic.png" alt="Converter Schematic" title="Converter Schematic"/></a>
+	<a href="{{ site.baseurl }}/images/lcd_i2c_board.png" target="_blank"><img src="{{ site.baseurl }}/images/lcd_i2c_board.png" alt="Converter Board" title="Converter Board"/></a>
 </figure>
 
 ## Arduino Duemilanove connection

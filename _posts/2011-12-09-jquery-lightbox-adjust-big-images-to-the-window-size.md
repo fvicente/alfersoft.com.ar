@@ -19,7 +19,7 @@ tags:
   - plugin
 comments: true
 ---
-[<img src="{{ site.url }}/images/jquery-lightbox-alfersoft-mod.png" alt="" title="jQuery lightBox AlferSoft Mod"/>]({{ site.url }}/images/jquery-lightbox-alfersoft-mod.png)
+[<img src="{{ site.baseurl }}/images/jquery-lightbox-alfersoft-mod.png" alt="" title="jQuery lightBox AlferSoft Mod"/>]({{ site.baseurl }}/images/jquery-lightbox-alfersoft-mod.png)
 
 <a href="http://leandrovieira.com/projects/jquery/lightbox/" title="jQuery lightBox plugin" target="_blank">jQuery lightBox</a> is a great plugin inspired in the well-known <a href="http://www.huddletogether.com/projects/lightbox2/" title="LightBox JS" target="_blank">Lightbox JS</a> by Lokesh Dhakar.
 
@@ -84,4 +84,4 @@ to:
 if ( settings.showInfo && (settings.imageArray.length > 1) ) {
 {% endhighlight %}
 
-<a title="Download jQuery lightBox 0.5 AlferSoft Mod" markdown="0" href="{{ site.url }}/files/jquery-lightbox-0.5-alfersoft-mod.zip" class="btn">Download jQuery lightBox 0.5 AlferSoft Mod</a>
+<a title="Download jQuery lightBox 0.5 AlferSoft Mod" markdown="0" href="{{ site.baseurl }}/files/jquery-lightbox-0.5-alfersoft-mod.zip" class="btn">Download jQuery lightBox 0.5 AlferSoft Mod</a>

@@ -18,9 +18,9 @@ tags:
   - VGA
 comments: true
 ---
-<img src="{{ site.url }}/images/bt_small.jpg" alt="Bluetooth Module" title="Bluetooth Module"/>
+<img src="{{ site.baseurl }}/images/bt_small.jpg" alt="Bluetooth Module" title="Bluetooth Module"/>
 
-In this post, you will find how the <a href="http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711" title="Cheap Bluetooth Module" target="_blank">Bluetooth module</a> interacts with the ATtiny45 in the <a href="{{ site.url }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/" title="Scoreboard (Part 1: VGA signal from an ATtiny45)" target="_blank">VGA Scoreboard</a> project.
+In this post, you will find how the <a href="http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711" title="Cheap Bluetooth Module" target="_blank">Bluetooth module</a> interacts with the ATtiny45 in the <a href="{{ site.baseurl }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/" title="Scoreboard (Part 1: VGA signal from an ATtiny45)" target="_blank">VGA Scoreboard</a> project.
 
 The Bluetooth module will wait for a connection from a device (e.g. an Android phone) and will act as an SPP (Serial Port Profile) re-passing everything received from the device to the UART interface. In our case the ATtiny will read the data but won&#8217;t &#8220;speak back&#8221; to the module, so it&#8217;s really a one way communication from that point of view.
 
@@ -133,7 +133,7 @@ void loop() {
 
 Upload it to the Arduino and click on the Monitor, you will get the following response:
 
-[<img src="{{ site.url }}/images/bt_serial.png" alt="" title="ATOK"/>]({{ site.url }}/images/bt_serial.png)
+[<img src="{{ site.baseurl }}/images/bt_serial.png" alt="" title="ATOK"/>]({{ site.baseurl }}/images/bt_serial.png)
 
 Now we are going to change the default name to &#8220;scoreboard&#8221;, to do so, replace the `Serial.print("AT")` with `Serial.print("AT+NAMEscoreboard")` and repeat the procedure.
 
@@ -143,4 +143,4 @@ Comments and questions are welcome!
 
 ## Related Posts
 
-[Scoreboard (Part 1: VGA signal from an ATtiny45)]({{ site.url }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)")
+[Scoreboard (Part 1: VGA signal from an ATtiny45)]({{ site.baseurl }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)")

@@ -13,7 +13,7 @@ comments: true
 If your motherboard&#8217;s BIOS is not saving changes and you&#8217;ve already changed the CR2032 battery, you might have an electric problem. Try changing the transistor near the battery holder, similar to the one shown in the image:
 
 <figure>
-	<img src="{{ site.url }}/images/bios_transistor.jpg">
+	<img src="{{ site.baseurl }}/images/bios_transistor.jpg">
 </figure>
 
 <!--more-->

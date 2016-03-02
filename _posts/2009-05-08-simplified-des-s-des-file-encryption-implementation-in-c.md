@@ -13,7 +13,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img title="Simplified DES" src="{{ site.url }}/images/lock.png" alt="Simplified DES"/>
+	<img title="Simplified DES" src="{{ site.baseurl }}/images/lock.png" alt="Simplified DES"/>
 	<figcaption>Photo Credit: <a href="http://upload.wikimedia.org/wikipedia/commons/f/ff/Crystal_Clear_action_lock.png" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
 </figure>
 

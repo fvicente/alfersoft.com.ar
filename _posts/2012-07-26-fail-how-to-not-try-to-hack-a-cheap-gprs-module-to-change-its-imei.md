@@ -18,7 +18,7 @@ tags:
   - SMS
 comments: true
 ---
-<a href="{{ site.url }}/images/gprs_01.jpg" target="_blank"><img src="{{ site.url }}/images/gprs_01.jpg" alt="GPRS module before tear down" title="GPRS module before tear down"/></a>
+<a href="{{ site.baseurl }}/images/gprs_01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/gprs_01.jpg" alt="GPRS module before tear down" title="GPRS module before tear down"/></a>
 
 I&#8217;ve got this relatively [cheap GPRS modem from dealextreme](http://dx.com/p/usb-tri-band-gprs-modem-cell-phone-radio-gsm-900-1800-1900mhz-12057?item=5 "Cheap GPRS Modem DealExtreme") with the hope that I could hack it to send SMS&#8217;s through the serial interface.
 
@@ -31,14 +31,14 @@ According to the <a href="http://club.dx.com/reviews/text/12057/107065" title="c
 This is **what I was expecting** to see:
 
 <figure>
-	<a href="{{ site.url }}/images/benq_m32.png" target="_blank"><img src="{{ site.url }}/images/benq_m32.png" alt="BenQ M32" title="BenQ M32"/></a>
+	<a href="{{ site.baseurl }}/images/benq_m32.png" target="_blank"><img src="{{ site.baseurl }}/images/benq_m32.png" alt="BenQ M32" title="BenQ M32"/></a>
 	<figcaption>BenQ M32</figcaption>
 </figure>
 
 But after almost destroying the thing this is **what I&#8217;ve actually found**:
 
 <figure>
-	<a href="{{ site.url }}/images/gprs_02.jpg" target="_blank"><img src="{{ site.url }}/images/gprs_02.jpg" alt="BenQ M32" title="BenQ M32"/></a>
+	<a href="{{ site.baseurl }}/images/gprs_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/gprs_02.jpg" alt="BenQ M32" title="BenQ M32"/></a>
 	<figcaption>BenQ M32</figcaption>
 </figure>
 

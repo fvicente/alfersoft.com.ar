@@ -2,6 +2,7 @@
 
 title:            AlferSoft Blog
 locale:           en_US
+baseurl:          /blog
 url:
 
 

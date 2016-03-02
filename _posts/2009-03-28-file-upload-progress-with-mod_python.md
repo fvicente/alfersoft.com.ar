@@ -21,7 +21,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img title="Upload Progress with mod_python" src="{{ site.url }}/images/uprogress.jpg" alt="Upload Progress with mod_python" />
+	<img title="Upload Progress with mod_python" src="{{ site.baseurl }}/images/uprogress.jpg" alt="Upload Progress with mod_python" />
 	<figcaption class="wp-caption-text">Upload Progress with mod_python</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ Start by downloading the <a title="Source code for uprogress example" href="http
 The source is organized like the following illustration:
 
 <figure>
-	<img title="Upload Progress source directory structure" src="{{ site.url }}/images/uprogress_src.jpg" alt="Upload Progress source directory structure" />
+	<img title="Upload Progress source directory structure" src="{{ site.baseurl }}/images/uprogress_src.jpg" alt="Upload Progress source directory structure" />
 	<figcaption>Upload Progress source directory structure</figcaption>
 </figure> 
 

@@ -20,7 +20,7 @@ tags:
   - x100p
 comments: true
 ---
-## [<img class="size-full wp-image-78 alignnone" style="margin: 10px 0px;" title="asterisk" src="{{ site.url }}/images/asterisk.png" alt="" width="162" height="91" />]({{ site.url }}/images/asterisk.png)
+## [<img class="size-full wp-image-78 alignnone" style="margin: 10px 0px;" title="asterisk" src="{{ site.baseurl }}/images/asterisk.png" alt="" width="162" height="91" />]({{ site.baseurl }}/images/asterisk.png)
 
 ## Introduction
 

@@ -20,7 +20,7 @@ tags:
   - password
 comments: true
 ---
-[<img src="{{ site.url }}/images/bios/bios_hack_01.jpg" alt="BIOS hack" title="BIOS hack"/>]({{ site.url }}/images/bios/bios_hack_01.jpg)
+[<img src="{{ site.baseurl }}/images/bios/bios_hack_01.jpg" alt="BIOS hack" title="BIOS hack"/>]({{ site.baseurl }}/images/bios/bios_hack_01.jpg)
 
 The goal of this experiment is to convert the Arduino board into an USB keyboard plus a VGA sniffer to crack the password of a standard BIOS using the [brute force attack](http://en.wikipedia.org/wiki/Brute-force_attack "Brute force attack") method. There are no advantages in using this method, in fact this can be very slow and you may never find the password at all, but as always we do it for fun. It&#8217;s just a proof of concept, there are many ways of resetting a BIOS specially if you have access to the hardware, and you need it anyway because we&#8217;re talking about BIOS and there is no &#8220;remote access&#8221; as far as I know.
 
@@ -45,9 +45,9 @@ A couple of Zener diodes to make the USB keyboard interface (it&#8217;s one of t
 There is a button which is used to pause/continue the attack. If you keep the button pressed for more than 2 seconds, the attack will be reset.
 
 
-[<img src="{{ site.url }}/images/bios/schematic.png" alt="BIOS hack schematic" title="BIOS hack schematic"/>]({{ site.url }}/images/bios/schematic.png)
+[<img src="{{ site.baseurl }}/images/bios/schematic.png" alt="BIOS hack schematic" title="BIOS hack schematic"/>]({{ site.baseurl }}/images/bios/schematic.png)
 
-[<img src="{{ site.url }}/images/bios/board.png" alt="BIOS hack board" title="BIOS hack board"/>]({{ site.url }}/images/bios/board.png)
+[<img src="{{ site.baseurl }}/images/bios/board.png" alt="BIOS hack board" title="BIOS hack board"/>]({{ site.baseurl }}/images/bios/board.png)
 
 
 ### Sniff the VGA
@@ -71,13 +71,13 @@ The state is periodically saved in the EEPROM so in case of power failure, you c
 Here some pictures of the shield
 
 <figure class="half">
-	<a title="BIOS Hack case" href="{{ site.url }}/images/bios/bios_hack_02.jpg" target="_blank"><img src="{{ site.url }}/images/bios/bios_hack_02.jpg" alt="An iPod box for the case" /></a>
-	<a title="BIOS Hack circuit board" href="{{ site.url }}/images/bios/bios_hack_03.jpg" target="_blank"><img src="{{ site.url }}/images/bios/bios_hack_03.jpg" alt="Tone transfer method to make the board. A little bit burnt due to the excessive ironing." /></a>
+	<a title="BIOS Hack case" href="{{ site.baseurl }}/images/bios/bios_hack_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/bios/bios_hack_02.jpg" alt="An iPod box for the case" /></a>
+	<a title="BIOS Hack circuit board" href="{{ site.baseurl }}/images/bios/bios_hack_03.jpg" target="_blank"><img src="{{ site.baseurl }}/images/bios/bios_hack_03.jpg" alt="Tone transfer method to make the board. A little bit burnt due to the excessive ironing." /></a>
 </figure>
 
 <figure class="half">
-	<a title="BIOS Hack front view" href="{{ site.url }}/images/bios/bios_hack_04.jpg" target="_blank"><img src="{{ site.url }}/images/bios/bios_hack_04.jpg" alt="BIOS Hack front view" /></a>
-	<a title="BIOS Hack back view" href="{{ site.url }}/images/bios/bios_hack_05.jpg" target="_blank"><img src="{{ site.url }}/images/bios/bios_hack_05.jpg" alt="BIOS Hack back view" /></a>
+	<a title="BIOS Hack front view" href="{{ site.baseurl }}/images/bios/bios_hack_04.jpg" target="_blank"><img src="{{ site.baseurl }}/images/bios/bios_hack_04.jpg" alt="BIOS Hack front view" /></a>
+	<a title="BIOS Hack back view" href="{{ site.baseurl }}/images/bios/bios_hack_05.jpg" target="_blank"><img src="{{ site.baseurl }}/images/bios/bios_hack_05.jpg" alt="BIOS Hack back view" /></a>
 </figure>
 
 ---

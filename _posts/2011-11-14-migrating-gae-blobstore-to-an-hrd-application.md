@@ -22,7 +22,7 @@ tags:
   - migration
 comments: true
 ---
-[<img src="{{ site.url }}/images/gae-logo.png" alt="Google App Engine" title="google app engine"/>]({{ site.url }}/images/gae-logo.png)
+[<img src="{{ site.baseurl }}/images/gae-logo.png" alt="Google App Engine" title="google app engine"/>]({{ site.baseurl }}/images/gae-logo.png)
 
 If you are planning to migrate your Google App Engine application to the &#8220;new&#8221; High Replication Database scheme, then you probably know that the Google migration process won&#8217;t handle Blobstore files.
 

@@ -22,7 +22,7 @@ tags:
   - SMS
 comments: true
 ---
-[<img src="{{ site.url }}/images/lock_128.png" alt="FullControl" title="FullControl"/>]({{ site.url }}/images/lock_128.png)
+[<img src="{{ site.baseurl }}/images/lock_128.png" alt="FullControl" title="FullControl"/>]({{ site.baseurl }}/images/lock_128.png)
 
 We are really excited to announce the launch of FullControl for Android!
 
@@ -104,9 +104,9 @@ Check out the <a href="http://www.fulldev.com.br/products/fullcontrol" title="Fu
 ## Screenshots
 
 <figure class="third">
-	<a title="FullControl Screenshot 1" href="{{ site.url }}/images/full_control_ss01.png" target="_blank"><img src="{{ site.url }}/images/full_control_ss01.png" alt="FullControl Screenshot 1" /></a>
-	<a title="FullControl Screenshot 2" href="{{ site.url }}/images/full_control_ss02.png" target="_blank"><img src="{{ site.url }}/images/full_control_ss02.png" alt="FullControl Screenshot 2" /></a>
-	<a title="FullControl Screenshot 3" href="{{ site.url }}/images/full_control_ss03.png" target="_blank"><img src="{{ site.url }}/images/full_control_ss03.png" alt="FullControl Screenshot 3" /></a>
+	<a title="FullControl Screenshot 1" href="{{ site.baseurl }}/images/full_control_ss01.png" target="_blank"><img src="{{ site.baseurl }}/images/full_control_ss01.png" alt="FullControl Screenshot 1" /></a>
+	<a title="FullControl Screenshot 2" href="{{ site.baseurl }}/images/full_control_ss02.png" target="_blank"><img src="{{ site.baseurl }}/images/full_control_ss02.png" alt="FullControl Screenshot 2" /></a>
+	<a title="FullControl Screenshot 3" href="{{ site.baseurl }}/images/full_control_ss03.png" target="_blank"><img src="{{ site.baseurl }}/images/full_control_ss03.png" alt="FullControl Screenshot 3" /></a>
 </figure>
 
 ## Get the FULL VERSION

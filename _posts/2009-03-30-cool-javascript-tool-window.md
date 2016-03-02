@@ -19,7 +19,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img title="Tool Window" src="{{ site.url }}/images/toolwindow.jpg" alt="Tool Window"/>
+	<img title="Tool Window" src="{{ site.baseurl }}/images/toolwindow.jpg" alt="Tool Window"/>
 	<figcaption>Tool Window</figcaption>
 </figure> 
 

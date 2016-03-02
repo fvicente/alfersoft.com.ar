@@ -19,7 +19,7 @@ tags:
   - shrink
 comments: true
 ---
-[<img src="{{ site.url }}/images/3d_printer_z_axis.jpg" alt="Z Axis Calibration"/>]({{ site.url }}/images/3d_printer_z_axis.jpg)
+[<img src="{{ site.baseurl }}/images/3d_printer_z_axis.jpg" alt="Z Axis Calibration"/>]({{ site.baseurl }}/images/3d_printer_z_axis.jpg)
 
 If your printed models are out of scale, in any axis, like it happened to me with the Z axis -you can clearly see in the picture that the hole looks like an oval instead of a circle- you might need to calibrate your firmware stepping parameter.
 

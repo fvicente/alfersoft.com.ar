@@ -19,7 +19,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img src="{{ site.url }}/images/cutnrot.jpg">
+	<img src="{{ site.baseurl }}/images/cutnrot.jpg">
 </figure>
 Today I&#8217;m introducing another utility script written in python that uses wxPython to edit your scanned images (JPEG, BMP, TIFF, etc.) obtain sub-images, rotate and save them.
 
@@ -38,6 +38,6 @@ The unfortunate name of this script is **cutnrot** 😀 and it is released under
 
 [cutnrot on GitHub](https://github.com/fvicente/cutnrot/ "cutnrot on GitHub"){:target="_blank"}
 
-<a title="cutnrot Windows Binaries" markdown="0" href="{{ site.url }}/files/cutnrot_win32_bin.zip" class="btn">Download Windows Binaries</a>
+<a title="cutnrot Windows Binaries" markdown="0" href="{{ site.baseurl }}/files/cutnrot_win32_bin.zip" class="btn">Download Windows Binaries</a>
 
 Windows binaries generated with <a title="py2exe" href="http://www.py2exe.org/" target="_blank">py2exe</a> for those that does not have a Python interpreter and/or wxPython installed.

@@ -22,7 +22,7 @@ tags:
   - windows
 comments: true
 ---
-[<img src="{{ site.url }}/images/parportsnif.png" alt="Parallel Port Sniffer" title="Parallel Port Sniffer"/>]({{ site.url }}/images/parportsnif.png)
+[<img src="{{ site.baseurl }}/images/parportsnif.png" alt="Parallel Port Sniffer" title="Parallel Port Sniffer"/>]({{ site.baseurl }}/images/parportsnif.png)
 
 This software will help you to capture the parallel port data using a small kernel module for Linux. But wait, not only Linux, it also works for Windows, if you use it in a Qemu Virtual Machine under Linux!.
 
@@ -101,7 +101,7 @@ Remember to press Ctrl+C to stop the output capturing.
 
 That&#8217;s it, now you are ready to open the dump.ols with Logic Sniffer:
 
-[<img src="{{ site.url }}/images/logic_sniffer.png" alt="Screenshot LogicSniffer Logic Analyzer Client" title="Screenshot LogicSniffer Logic Analyzer Client"/>]({{ site.url }}/images/logic_sniffer.png)
+[<img src="{{ site.baseurl }}/images/logic_sniffer.png" alt="Screenshot LogicSniffer Logic Analyzer Client" title="Screenshot LogicSniffer Logic Analyzer Client"/>]({{ site.baseurl }}/images/logic_sniffer.png)
 
 ## How to use it with Qemu / Windows
 
@@ -109,7 +109,7 @@ With Qemu you need to specify a parameter called `-parallel` to specify the `/de
 
 If you use the QtEmu front-end (like me), you can use the &#8220;Additional QEMU Options&#8221; in the Settings screen:
 
-[<img src="{{ site.url }}/images/qtemu.png" alt="Screenshot QtEmu" title="Screenshot QtEmu"/>]({{ site.url }}/images/qtemu.png)
+[<img src="{{ site.baseurl }}/images/qtemu.png" alt="Screenshot QtEmu" title="Screenshot QtEmu"/>]({{ site.baseurl }}/images/qtemu.png)
 
 Since the format of the capture is made for logic analyzer devices, each entry has a specific point in time (emulating a 1Mhz logic analyzer), and the base time is taken when the port is opened for the first time. Qemu will open the parallel port sniffer when Windows is starting, you will receive a lot of signal changes on the port from Windows itself (maybe looking for a printer or something like that), and then you will run the program that you really want to capture and analyze. So, your final file will have the first two lines of header that starts with &#8220;#&#8221; and a few entries at the beginning that you may want to delete (Windows initialization). You can use the `rebase.py` script provided to set the timing to the beginning of the time-line.
 

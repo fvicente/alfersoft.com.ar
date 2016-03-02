@@ -21,7 +21,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img title="Python" alt="Python" src="{{ site.url }}/images/python.jpg">
+	<img title="Python" alt="Python" src="{{ site.baseurl }}/images/python.jpg">
 	<figcaption>Photo Credit: <a title="Python" href="http://commons.wikimedia.org/wiki/File:Boomslang_(443113819).jpg" target="_blank">Wikimedia Commons</a></figcaption>
 </figure>
 Photo Credit: [Wikimedia Commons](http://commons.wikimedia.org/wiki/File:Boomslang_(443113819).jpg "Python"){:target="_blank"}

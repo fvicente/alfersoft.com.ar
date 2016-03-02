@@ -30,7 +30,7 @@ Using **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** Jekyll
 ```
 $ cd ~/workspace/alfersoft.com.ar/   (or wherever you've checked out the code)
 $ jekyll build
-$ jekyll serve
+$ jekyll serve --baseurl ''
 ```
 
 *Update posts*

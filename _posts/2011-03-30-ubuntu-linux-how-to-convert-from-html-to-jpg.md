@@ -22,7 +22,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img src="{{ site.url }}/images/question.png">
+	<img src="{{ site.baseurl }}/images/question.png">
 	<figcaption>Photo Credit: <a href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
 </figure>
 
@@ -47,4 +47,4 @@ convert report.pdf report.jpg
 
 In other words, edit Image.py and move line 1501 `self.load()` to 1497, just before the `if self.im.bands == 1:`
 
-[<img src="{{ site.url }}/images/image_py_fix.png" alt="Image.py fix" title="Image py fix"/>]({{ site.url }}/images/image_py_fix.png)
+[<img src="{{ site.baseurl }}/images/image_py_fix.png" alt="Image.py fix" title="Image py fix"/>]({{ site.baseurl }}/images/image_py_fix.png)

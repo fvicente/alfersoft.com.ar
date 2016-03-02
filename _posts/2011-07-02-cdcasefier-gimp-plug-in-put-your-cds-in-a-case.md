@@ -18,11 +18,11 @@ tags:
   - python
 comments: true
 ---
-[<img src="{{ site.url }}/images/cdcasefy.png" alt="" title="cdcasefy"/>]({{ site.url }}/images/cdcasefy.png)
+[<img src="{{ site.baseurl }}/images/cdcasefy.png" alt="" title="cdcasefy"/>]({{ site.baseurl }}/images/cdcasefy.png)
 
 This Python-Fu plug-in for Gimp will let you put a scanned CD photo into a &#8216;virtual&#8217; case.
 
-<a title="Download cdcasefier.tar.gz" markdown="0" href="{{ site.url }}/files/cdcasefier.tar.gz" class="btn">Download Gimp Plug-In</a>
+<a title="Download cdcasefier.tar.gz" markdown="0" href="{{ site.baseurl }}/files/cdcasefier.tar.gz" class="btn">Download Gimp Plug-In</a>
 
 <!--more-->
 

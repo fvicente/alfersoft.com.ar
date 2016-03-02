@@ -20,7 +20,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img src="{{ site.url }}/images/question.png">
+	<img src="{{ site.baseurl }}/images/question.png">
 	<figcaption>Photo Credit: <a href="http://commons.wikimedia.org/wiki/File:Gnome-dialog-question.svg" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
 </figure>
 

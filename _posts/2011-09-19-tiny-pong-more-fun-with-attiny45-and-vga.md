@@ -21,11 +21,11 @@ tags:
   - video
 comments: true
 ---
-I&#8217;m still waiting for my cheap [Bluetooth module from China](http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711 "Bluetooth Module") which will serve as an input interface for my [scoreboard project]({{ site.url }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)"). In the meantime, I&#8217;ll show you how to convert your ATtiny microcontroller into a Pong game (with no input so far).
+I&#8217;m still waiting for my cheap [Bluetooth module from China](http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711 "Bluetooth Module") which will serve as an input interface for my [scoreboard project]({{ site.baseurl }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)"). In the meantime, I&#8217;ll show you how to convert your ATtiny microcontroller into a Pong game (with no input so far).
 
 <figure class="half">
-	<a title="Tiny Pong" href="{{ site.url }}/images/tinypong/tinypong_01.jpg" target="_blank"><img src="{{ site.url }}/images/tinypong/tinypong_01.jpg" alt="" title="Tiny Pong"/></a>
-	<a title="Tiny Pong in the protoboard" href="{{ site.url }}/images/tinypong/tinypong_02.jpg" target="_blank"><img src="{{ site.url }}/images/tinypong/tinypong_02.jpg" alt="" title="Tiny Pong in the protoboard"/></a>
+	<a title="Tiny Pong" href="{{ site.baseurl }}/images/tinypong/tinypong_01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/tinypong/tinypong_01.jpg" alt="" title="Tiny Pong"/></a>
+	<a title="Tiny Pong in the protoboard" href="{{ site.baseurl }}/images/tinypong/tinypong_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/tinypong/tinypong_02.jpg" alt="" title="Tiny Pong in the protoboard"/></a>
 </figure>
 
 <!--more-->

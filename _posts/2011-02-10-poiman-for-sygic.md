@@ -17,7 +17,7 @@ tags:
   - update
 comments: true
 ---
-[<img src="{{ site.url }}/images/poiman-256.png" alt="" title="POIMan for Sygic" />]({{ site.url }}/images/poiman-256.png)
+[<img src="{{ site.baseurl }}/images/poiman-256.png" alt="" title="POIMan for Sygic" />]({{ site.baseurl }}/images/poiman-256.png)
 
 POIMan for Sygic is an Android application that lets you keep your Sygic&#8217;s Point of Interests (POIs) up to date and manage them (add / remove) in an easy way.
 
@@ -30,12 +30,12 @@ This application will download the POI&#8217;s list from a definable URL (by def
 ## Screenshots
 
 <figure class="half">
-	<img src="{{ site.url }}/images/poiman-ss01.png" alt="Screenshot #1"/>
-	<img src="{{ site.url }}/images/poiman-ss02.png" alt="Screenshot #2"/>
+	<img src="{{ site.baseurl }}/images/poiman-ss01.png" alt="Screenshot #1"/>
+	<img src="{{ site.baseurl }}/images/poiman-ss02.png" alt="Screenshot #2"/>
 </figure>
 <figure class="half">
-	<img src="{{ site.url }}/images/poiman-ss03.png" alt="Screenshot #3"/>
-	<img src="{{ site.url }}/images/poiman-ss04.png" alt="Screenshot #4"/>
+	<img src="{{ site.baseurl }}/images/poiman-ss03.png" alt="Screenshot #3"/>
+	<img src="{{ site.baseurl }}/images/poiman-ss04.png" alt="Screenshot #4"/>
 </figure>
 
 <!--more-->

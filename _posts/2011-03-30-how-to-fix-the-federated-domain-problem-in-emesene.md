@@ -21,7 +21,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img src="{{ site.url }}/images/emesene-logo.png">
+	<img src="{{ site.baseurl }}/images/emesene-logo.png">
 </figure>
 
 If your emesene keeps displaying the annoying message &#8220;User could not be added: Email Domain is IM Federated Contact LiveID xxx@yyy.com is federated domain.&#8221; no matter if you accept or reject the user, then you probably want to apply this patch.

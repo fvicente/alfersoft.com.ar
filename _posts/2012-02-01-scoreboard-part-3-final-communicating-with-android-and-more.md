@@ -20,7 +20,7 @@ tags:
   - VGA
 comments: true
 ---
-[<img src="{{ site.url }}/images/scoreboard/scoreboard_02.jpg" alt="Scoreboard - Final" title="Scoreboard - Final"/>]({{ site.url }}/images/scoreboard/scoreboard_02.jpg)
+[<img src="{{ site.baseurl }}/images/scoreboard/scoreboard_02.jpg" alt="Scoreboard - Final" title="Scoreboard - Final"/>]({{ site.baseurl }}/images/scoreboard/scoreboard_02.jpg)
 
 The Scoreboard project is now finished and working!
 
@@ -39,17 +39,17 @@ Schematic and board were made with Eagle CAD software.
 Note: In this schematic I&#8217;ve used an ATtiny13, because I could not find the ATtiny45 in my Eagle library. As it was said before, in the project I ended using an ATtiny45. I guess the memory of ATtiny13 is enough to run the scoreboard firmware but can&#8217;t say for sure.
 
 <figure class="half">
-	<a title="Scoreboard Schematic" href="{{ site.url }}/images/scoreboard/scoreboard_schematic.png" target="_blank"><img src="{{ site.url }}/images/scoreboard/scoreboard_schematic.png" alt="Scoreboard Schematic" /></a>
-	<a title="Scoreboard PCB" href="{{ site.url }}/images/scoreboard/scoreboard_pcb.png" target="_blank"><img src="{{ site.url }}/images/scoreboard/scoreboard_pcb.png" alt="Scoreboard PCB" /></a>
+	<a title="Scoreboard Schematic" href="{{ site.baseurl }}/images/scoreboard/scoreboard_schematic.png" target="_blank"><img src="{{ site.baseurl }}/images/scoreboard/scoreboard_schematic.png" alt="Scoreboard Schematic" /></a>
+	<a title="Scoreboard PCB" href="{{ site.baseurl }}/images/scoreboard/scoreboard_pcb.png" target="_blank"><img src="{{ site.baseurl }}/images/scoreboard/scoreboard_pcb.png" alt="Scoreboard PCB" /></a>
 </figure>
 
 ## List of materials
 
 Qty|Component|Sch. Code|Datasheet|Price (avg. US$)|
 --:|---------|---------|---------|---------------:|
-1  |3.3v Regulator|IC1|[tlv1117-33]({{ site.url }}/files/datasheets/tlv1117-33.pdf)|0.79|
+1  |3.3v Regulator|IC1|[tlv1117-33]({{ site.baseurl }}/files/datasheets/tlv1117-33.pdf)|0.79|
 1  |Atmel ATtiny45 microcontroller|IC2||2.31|
-1  |Bluetooth module|P$1|[bluetooth]({{ site.url }}/files/datasheets/bluetoothddatasheet.pdf)|6.60 (on <a href="http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711" title="Bluetooth module on DealExtreme">DealExtreme</a>)|
+1  |Bluetooth module|P$1|[bluetooth]({{ site.baseurl }}/files/datasheets/bluetoothddatasheet.pdf)|6.60 (on <a href="http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711" title="Bluetooth module on DealExtreme">DealExtreme</a>)|
 2  |104 Ceramic capacitor|C1, C4||0.05 (each)|
 2  |10uf Electrolytic capacitor|C2, C3||0.05 (each)|
 2  |22pF Ceramic capacitor|C5, C6||0.05 (each)|
@@ -62,7 +62,7 @@ Qty|Component|Sch. Code|Datasheet|Price (avg. US$)|
 
 ## Circuit
 
-Circuit is pretty straight as you can see. An external C/C power supply is needed to power the circuit. There is a voltage regulator so the supply in this case can be up to 15V (I didn&#8217;t measure consumption yet). The regulator has its respective capacitors in the input and output, used as filters. The bluetooth module and the microcontroller are connected through a single wire between module&#8217;s UART TXD and the PB5 pin of the ATtiny fused as an input (read more on [Part 2]({{ site.url }}/2012/01/23/scoreboard-part-2-reading-uart-from-the-bluetooth-module/ "Scoreboard (Part 2: Reading UART from the Bluetooth Module)") of this series).
+Circuit is pretty straight as you can see. An external C/C power supply is needed to power the circuit. There is a voltage regulator so the supply in this case can be up to 15V (I didn&#8217;t measure consumption yet). The regulator has its respective capacitors in the input and output, used as filters. The bluetooth module and the microcontroller are connected through a single wire between module&#8217;s UART TXD and the PB5 pin of the ATtiny fused as an input (read more on [Part 2]({{ site.baseurl }}/2012/01/23/scoreboard-part-2-reading-uart-from-the-bluetooth-module/ "Scoreboard (Part 2: Reading UART from the Bluetooth Module)") of this series).
 
 A blue led with a resistor is attached to PIN24 of the bluetooth module, it will blink while the module is waiting for a connection and keep on when a connection is established, that&#8217;s using the default module firmware linvor1.5 that comes pre-programmed from DealExtreme, if you buy a different module or use a different firmware, you will need to review all the pin connections. According to the bluetooth module datasheet (at least the one that is supposed to be the correct one) you should put a 10K resistor from the reset pin to the ground, BUT actually I had to remove it to get the module working, otherwise it won&#8217;t even turn on. So **DO NOT PUT R2.**
 
@@ -76,17 +76,17 @@ The meaning of the pads in the PCB is the following:
 * PAD6: Ground to the VGA connector DB-15 pin 5 to 10
 
 <figure>
-	<a title="Scoreboard on the breadboard" href="{{ site.url }}/images/scoreboard/scoreboard_proto_02.jpg" target="_blank"><img src="{{ site.url }}/images/scoreboard/scoreboard_proto_02.jpg" alt="Scoreboard on the breadboard"/></a>
+	<a title="Scoreboard on the breadboard" href="{{ site.baseurl }}/images/scoreboard/scoreboard_proto_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/scoreboard/scoreboard_proto_02.jpg" alt="Scoreboard on the breadboard"/></a>
 	<figcaption>Scoreboard on the breadboard</figcaption>
 </figure>
 
 <figure>
-	<a title="Scoreboard on PCB (top view)" href="{{ site.url }}/images/scoreboard/scoreboard_03.jpg" target="_blank"><img src="{{ site.url }}/images/scoreboard/scoreboard_03.jpg" alt="Scoreboard on PCB (top view)"/></a>
+	<a title="Scoreboard on PCB (top view)" href="{{ site.baseurl }}/images/scoreboard/scoreboard_03.jpg" target="_blank"><img src="{{ site.baseurl }}/images/scoreboard/scoreboard_03.jpg" alt="Scoreboard on PCB (top view)"/></a>
 	<figcaption>Scoreboard on PCB (top view)</figcaption>
 </figure>
 
 <figure>
-	<a title="Scoreboard on PCB (bottom view)" href="{{ site.url }}/images/scoreboard/scoreboard_04.jpg" target="_blank"><img src="{{ site.url }}/images/scoreboard/scoreboard_04.jpg" alt="Scoreboard on PCB (bottom view)"/></a>
+	<a title="Scoreboard on PCB (bottom view)" href="{{ site.baseurl }}/images/scoreboard/scoreboard_04.jpg" target="_blank"><img src="{{ site.baseurl }}/images/scoreboard/scoreboard_04.jpg" alt="Scoreboard on PCB (bottom view)"/></a>
 	<figcaption>Scoreboard on PCB (bottom view)</figcaption>
 </figure>
 
@@ -102,7 +102,7 @@ We have created a public repository on <a href="https://bitbucket.org/fvicente/s
 Also it is available on the Android Market (search for &#8220;Scoreboard SPP&#8221;), I recommend to check out other CarlosBar project like the excellent <a href="http://code.google.com/p/ttsaid/" title="TTSAid" target="_blank">TTSAid</a>.
 
 <figure>
-	<a title="Scoreboard Android Application" href="{{ site.url }}/images/scoreboard/scoreboard_app.jpg" target="_blank"><img src="{{ site.url }}/images/scoreboard/scoreboard_app.jpg" alt="Scoreboard Android Application"/></a>
+	<a title="Scoreboard Android Application" href="{{ site.baseurl }}/images/scoreboard/scoreboard_app.jpg" target="_blank"><img src="{{ site.baseurl }}/images/scoreboard/scoreboard_app.jpg" alt="Scoreboard Android Application"/></a>
 	<figcaption>Scoreboard Android Application</figcaption>
 </figure>
 
@@ -110,9 +110,9 @@ Also it is available on the Android Market (search for &#8220;Scoreboard SPP&#82
 
 You can find more details on the ATtiny firmware, the UART communication and the VGA output, on previous posts:
 
-[Scoreboard (Part 1: VGA signal from an ATtiny45)]({{ site.url }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)")
+[Scoreboard (Part 1: VGA signal from an ATtiny45)]({{ site.baseurl }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)")
 
-[Scoreboard (Part 2: Reading UART from the Bluetooth Module)]({{ site.url }}/2012/01/23/scoreboard-part-2-reading-uart-from-the-bluetooth-module/ "Scoreboard (Part 2: Reading UART from the Bluetooth Module)")
+[Scoreboard (Part 2: Reading UART from the Bluetooth Module)]({{ site.baseurl }}/2012/01/23/scoreboard-part-2-reading-uart-from-the-bluetooth-module/ "Scoreboard (Part 2: Reading UART from the Bluetooth Module)")
 
 ## Download
 

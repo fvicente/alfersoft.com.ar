@@ -24,7 +24,7 @@ comments: true
 
 The idea of this project is to control (switch off/on) two power sockets with a computer by using its USB port. I&#8217;ve chosen USB in first place because I wanted to experiment with the PIC18F4550 microchip&#8217;s microcontroller, and secondly because the power supplied by this port (500mA) is enough to activate a relay without any additional power supply.
 
-<img src="{{ site.url }}/images/usocket/proto04.jpg" alt="Prototype" />
+<img src="{{ site.baseurl }}/images/usocket/proto04.jpg" alt="Prototype" />
 
 <!--more-->
 
@@ -42,7 +42,7 @@ The whole project including PIC firmware and Eagle files is available for downlo
 ## The Circuit
 
 <figure style="text-align: center;">
-	<a title="Schematic" href="{{ site.url }}/images/usocket/full.png" target="_blank"><img style="border: 1px solid black;" src="{{ site.url }}/images/usocket/full.png" alt="Figure 1 - Schematic" /></a>
+	<a title="Schematic" href="{{ site.baseurl }}/images/usocket/full.png" target="_blank"><img style="border: 1px solid black;" src="{{ site.baseurl }}/images/usocket/full.png" alt="Figure 1 - Schematic" /></a>
 	<figcaption>Figure 1 &#8211; Schematic</figcaption>
 </figure>
 
@@ -51,25 +51,25 @@ Pretty much the same as USBDAQ but two (identical) sub-circuits were added to co
 The PCB is divided in 3 little boards, for commodity and socket case space issues. (I&#8217;ve used only 2 strip boards in the actual prototype).
 
 <figure style="text-align: center;">
-	<a title="Board" href="{{ site.url }}/images/usocket/full_board.png" target="_blank"><img style="border: 1px solid black;" src="{{ site.url }}/images/usocket/full_board.png" alt="Figure 2 - Board" /></a>
+	<a title="Board" href="{{ site.baseurl }}/images/usocket/full_board.png" target="_blank"><img style="border: 1px solid black;" src="{{ site.baseurl }}/images/usocket/full_board.png" alt="Figure 2 - Board" /></a>
 	<figcaption>Figure 2 &#8211; Board</figcaption>
 </figure>
 
 List of materials:
 
-  * IC1 &#8211; PIC16F4550 Microchip&#8217;s micro-controller ([datasheet]({{ site.url }}/files/datasheets/pic18f4550-microchip.pdf "PIC18F4550 by Microchip"))
+  * IC1 &#8211; PIC16F4550 Microchip&#8217;s micro-controller ([datasheet]({{ site.baseurl }}/files/datasheets/pic18f4550-microchip.pdf "PIC18F4550 by Microchip"))
   * Q2 &#8211; Crystal 20Mhz
   * R1 &#8211; Resistor 4.7K
   * R2 &#8211; Resistor 1M
   * R3, R5 &#8211; Resistors 150
   * R4, R6 &#8211; Resistors 100K
-  * K1, K3 &#8211; 5v Relays. I&#8217;ve used FBR211 by Fujitsu ([datasheet]({{ site.url }}/files/datasheets/fbr211-relay-fujitsu.pdf "FBR211 Relay by Fujitsu"))
+  * K1, K3 &#8211; 5v Relays. I&#8217;ve used FBR211 by Fujitsu ([datasheet]({{ site.baseurl }}/files/datasheets/fbr211-relay-fujitsu.pdf "FBR211 Relay by Fujitsu"))
   * D1, D2, D3. D4 &#8211; Diodes 1N4004
-  * Q1, Q3 &#8211; BC517 Darlington-transistors ([datasheet]({{ site.url }}/files/datasheets/bc517.pdf "BC517 Darlington Transistor"))
+  * Q1, Q3 &#8211; BC517 Darlington-transistors ([datasheet]({{ site.baseurl }}/files/datasheets/bc517.pdf "BC517 Darlington Transistor"))
   * LED1, LED2 &#8211; Regular leds
   * C1, C2 &#8211; Capacitors 22pF
   * C3 &#8211; Capacitor 470pF
-  * X1 &#8211; Mini-USB Connector Type B ([datasheet]({{ site.url }}/files/datasheets/2411-02-lumberg-usb-connector-type-b.pdf "USB connector type B"))
+  * X1 &#8211; Mini-USB Connector Type B ([datasheet]({{ site.baseurl }}/files/datasheets/2411-02-lumberg-usb-connector-type-b.pdf "USB connector type B"))
 
 
 ## PIC Firmware
@@ -159,7 +159,7 @@ SERVICE="AlferSoft USocket 1.0"
 
 I&#8217;ve used WinPic800 to program the PIC. Here is a screenshot of the parameters I used to program it.
 
-<img style="border: 1px solid black;" src="{{ site.url }}/images/usocket/usbparams.png" alt="Parameters to program the PIC" />
+<img style="border: 1px solid black;" src="{{ site.baseurl }}/images/usocket/usbparams.png" alt="Parameters to program the PIC" />
 
 
 ## Commands
@@ -179,48 +179,48 @@ All the commands are followed by an enter (chr(13) or &#8216;\n&#8217;).
 1. Plug the device into the USB port, the following message will appear in the tray bar.
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket01_inst_win.png" alt="Installation Windows step 1" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket01_inst_win.png" alt="Installation Windows step 1" />
 	</figure>
 
 2. In the first page of the &#8220;Found New Hardware Wizard&#8221; select &#8220;No, not this time&#8221; and click Next button.
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket02_inst_win.png" alt="Installation Windows step 2" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket02_inst_win.png" alt="Installation Windows step 2" />
 	</figure>
 3. Select the &#8220;Install from a list or specific location (Advanced)&#8221; option and click Next button.
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket03_inst_win.png" alt="Installation Windows step 3" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket03_inst_win.png" alt="Installation Windows step 3" />
 	</figure>
 
 4. Mark the &#8220;Include this location in the search:&#8221; and browse for the directory where the .inf file is located (driver\win2k_winxp)
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket04_inst_win.png" alt="Installation Windows step 4" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket04_inst_win.png" alt="Installation Windows step 4" />
 	</figure>
 
 5. This message will appear:
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket05_inst_win.png" alt="Installation Windows step 5" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket05_inst_win.png" alt="Installation Windows step 5" />
 	</figure>
 
 6. And then this one:
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket06_inst_win.png" alt="Installation Windows step 6" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket06_inst_win.png" alt="Installation Windows step 6" />
 	</figure>
 
 7. When the installation is done press &#8220;Finish&#8221;
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket07_inst_win.png" alt="Installation Windows step 7" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket07_inst_win.png" alt="Installation Windows step 7" />
 	</figure>
 
 8. After that the hardware is ready to use.
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket08_inst_win.png" alt="Installation Windows step 8" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket08_inst_win.png" alt="Installation Windows step 8" />
 	</figure>
 
 
@@ -229,43 +229,43 @@ All the commands are followed by an enter (chr(13) or &#8216;\n&#8217;).
 1. Go to the device manager and locate the new COM port added, in my example COM10 was added
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket09_test_win.png" alt="Installation Windows step 9" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket09_test_win.png" alt="Installation Windows step 9" />
 	</figure>
 
 2. Open Hyperterminal and choose a name for the new conection
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket10_test_win.png" alt="Installation Windows step 10" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket10_test_win.png" alt="Installation Windows step 10" />
 	</figure>
 
 3. Select the new COM port
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket11_test_win.png" alt="Installation Windows step 11" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket11_test_win.png" alt="Installation Windows step 11" />
 	</figure>
 
 4. Set the Bit rate to 115200
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket12_test_win.png" alt="Installation Windows step 12" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket12_test_win.png" alt="Installation Windows step 12" />
 	</figure>
 
 5. This step is optional to see what we are typing on the screen, choose ASCII Setup
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket13_test_win.png" alt="Installation Windows step 13" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket13_test_win.png" alt="Installation Windows step 13" />
 	</figure>
 
 6. Then mark &#8220;Echo typed characters locally&#8221;
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket14_test_win.png" alt="Installation Windows step 14" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket14_test_win.png" alt="Installation Windows step 14" />
 	</figure>
 
 7. Finally connect and type one of the commands
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket15_test_win.png" alt="Installation Windows step 15" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket15_test_win.png" alt="Installation Windows step 15" />
 	</figure>
 
 
@@ -280,13 +280,13 @@ All the commands are followed by an enter (chr(13) or &#8216;\n&#8217;).
 1. Open gtkterm if you don&#8217;t have it installed type &#8220;sudo apt-get install gtkterm&#8221; from a terminal
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket01_linux.png" alt="Testing Linux step 1" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket01_linux.png" alt="Testing Linux step 1" />
 	</figure>
 
 2. Go to Configuration -> Port, set the port to /dev/ttyACM0, the speed to 115200 and click OK
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket02_linux.png" alt="Testing Linux step 2" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket02_linux.png" alt="Testing Linux step 2" />
 	</figure>
 
 3. Select Configuration -> Local echo
@@ -294,7 +294,7 @@ All the commands are followed by an enter (chr(13) or &#8216;\n&#8217;).
 4. Type the command and press enter
 
 	<figure>
-		<img class="aligncenter" src="{{ site.url }}/images/usocket/usocket03_linux.png" alt="Testing Linux step 3" />
+		<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/usocket03_linux.png" alt="Testing Linux step 3" />
 	</figure>
 
 
@@ -306,14 +306,14 @@ After I mounted everything in the case a problem appeared, if I plug the USB cab
 ## Pictures
 
 <figure class="third">
-	<a title="Prototype" href="{{ site.url }}/images/usocket/proto01.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/proto01.jpg" alt="Prototype" /></a>
-	<a title="Prototype" href="{{ site.url }}/images/usocket/proto05.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/proto05.jpg" alt="Prototype" /></a>
-	<a title="Board" href="{{ site.url }}/images/usocket/board02.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/board02.jpg" alt="Board" /></a>
+	<a title="Prototype" href="{{ site.baseurl }}/images/usocket/proto01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/usocket/proto01.jpg" alt="Prototype" /></a>
+	<a title="Prototype" href="{{ site.baseurl }}/images/usocket/proto05.jpg" target="_blank"><img src="{{ site.baseurl }}/images/usocket/proto05.jpg" alt="Prototype" /></a>
+	<a title="Board" href="{{ site.baseurl }}/images/usocket/board02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/usocket/board02.jpg" alt="Board" /></a>
 </figure>
 <figure class="third">
-	<a title="Board" href="{{ site.url }}/images/usocket/board04.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/board04.jpg" alt="Board" /></a>
-	<a title="Case" href="{{ site.url }}/images/usocket/case01.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/case01.jpg" alt="Case" /></a>
-	<a title="Case" href="{{ site.url }}/images/usocket/case02.jpg" target="_blank"><img src="{{ site.url }}/images/usocket/case02.jpg" alt="Case" /></a>
+	<a title="Board" href="{{ site.baseurl }}/images/usocket/board04.jpg" target="_blank"><img src="{{ site.baseurl }}/images/usocket/board04.jpg" alt="Board" /></a>
+	<a title="Case" href="{{ site.baseurl }}/images/usocket/case01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/usocket/case01.jpg" alt="Case" /></a>
+	<a title="Case" href="{{ site.baseurl }}/images/usocket/case02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/usocket/case02.jpg" alt="Case" /></a>
 </figure>
 
 
@@ -322,7 +322,7 @@ After I mounted everything in the case a problem appeared, if I plug the USB cab
 Here is a small modification to read the current relay state:
 Add two diodes one from pin 19 to 33 and the other from pin 20 to 34. Use the command *B to read the status.
 <figure>
-	<img class="aligncenter" src="{{ site.url }}/images/usocket/mod.png" alt="Mod" />
+	<img class="aligncenter" src="{{ site.baseurl }}/images/usocket/mod.png" alt="Mod" />
 </figure>
 
 

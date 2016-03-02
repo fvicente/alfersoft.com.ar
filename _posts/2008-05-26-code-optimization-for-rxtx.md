@@ -17,7 +17,7 @@ tags:
 comments: true
 ---
 <figure>
-	<img src="{{ site.url }}/images/db25.jpg">
+	<img src="{{ site.baseurl }}/images/db25.jpg">
 	<figcaption>Photo Credit: <a href="http://commons.wikimedia.org/wiki/Image:Scsi_extern_db25_st.jpg" title="Wikimedia Commons"> Wikimedia Commons</a></figcaption>
 </figure>
 

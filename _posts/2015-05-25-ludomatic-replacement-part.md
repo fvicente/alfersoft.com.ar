@@ -28,14 +28,14 @@ rotate(180, [0, 1, 0]) {
 }
 {% endhighlight %}
 
-[<img src="{{ site.url }}/images/ludomatic_openscad.png" alt="Ludomatic Part OpenSCAD"/>]({{ site.url }}/images/ludomatic_openscad.png)
+[<img src="{{ site.baseurl }}/images/ludomatic_openscad.png" alt="Ludomatic Part OpenSCAD"/>]({{ site.baseurl }}/images/ludomatic_openscad.png)
 
-[<img src="{{ site.url }}/images/ludomatic_01.jpg" alt="Ludomatic Part Replacement"/>]({{ site.url }}/images/ludomatic_01.jpg)
+[<img src="{{ site.baseurl }}/images/ludomatic_01.jpg" alt="Ludomatic Part Replacement"/>]({{ site.baseurl }}/images/ludomatic_01.jpg)
 
-[<img src="{{ site.url }}/images/ludomatic_02.jpg" alt="Ludomatic Part Replacement"/>]({{ site.url }}/images/ludomatic_02.jpg)
+[<img src="{{ site.baseurl }}/images/ludomatic_02.jpg" alt="Ludomatic Part Replacement"/>]({{ site.baseurl }}/images/ludomatic_02.jpg)
 
 ## Download
 
-<a title="Download ludomatic.scad" markdown="0" href="{{ site.url }}/files/ludomatic.scad" class="btn">Download ludomatic.scad</a>
+<a title="Download ludomatic.scad" markdown="0" href="{{ site.baseurl }}/files/ludomatic.scad" class="btn">Download ludomatic.scad</a>
 
 [Thingiverse link](http://www.thingiverse.com/thing:847407){:target="_blank"}

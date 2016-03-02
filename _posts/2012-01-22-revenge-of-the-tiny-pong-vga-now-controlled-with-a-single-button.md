@@ -19,7 +19,7 @@ tags:
   - video
 comments: true
 ---
-[<img src="{{ site.url }}/images/tinypong/push_button.png" alt="Tiny Pong VGA push button" title="Tiny Pong VGA push button">]({{ site.url }}/images/tinypong/push_button.png)
+[<img src="{{ site.baseurl }}/images/tinypong/push_button.png" alt="Tiny Pong VGA push button" title="Tiny Pong VGA push button">]({{ site.baseurl }}/images/tinypong/push_button.png)
 
 As it was suggested by <a href="http://hackaday.com/2011/10/07/8-pin-micro-plays-pong-on-you-widescreen/" title="Hackaday Tiny Pong VGA" target="_blank">Hackaday&#8217;s guys</a>, I&#8217;ve added a simple push button in the only available pin of my ATtiny45 in order to control the Tiny Pong VGA. The switch toggles the paddle direction up and down, every time you release it.
 
@@ -29,24 +29,24 @@ I&#8217;ve made some little changes in the code, so check it out, you might find
 
 ## Hardware
 
-Compared to <a href="{{ site.url }}/2011/09/19/tiny-pong-more-fun-with-attiny45-and-vga/" title="Tiny Pong: More fun with ATtiny45 and VGA" target="_blank">Tiny Pong 1.0</a>, I just added a push button on PB5 with a 10K ohms resistor as pull-down.
+Compared to <a href="{{ site.baseurl }}/2011/09/19/tiny-pong-more-fun-with-attiny45-and-vga/" title="Tiny Pong: More fun with ATtiny45 and VGA" target="_blank">Tiny Pong 1.0</a>, I just added a push button on PB5 with a 10K ohms resistor as pull-down.
 
 Here is a picture of the circuit on the breadboard.
 
 <figure style="text-align: center;">
-	<a title="Tiny Pong VGA on the protoboard" href="{{ site.url }}/images/tinypong/tinypong_with_button.jpg" target="_blank"><img src="{{ site.url }}/images/tinypong/tinypong_with_button.jpg" alt="Tiny Pong VGA on the protoboard" title="Tiny Pong VGA on the protoboard"/></a>
+	<a title="Tiny Pong VGA on the protoboard" href="{{ site.baseurl }}/images/tinypong/tinypong_with_button.jpg" target="_blank"><img src="{{ site.baseurl }}/images/tinypong/tinypong_with_button.jpg" alt="Tiny Pong VGA on the protoboard" title="Tiny Pong VGA on the protoboard"/></a>
 	<figcaption>Tiny Pong VGA on the protoboard</figcaption>
 </figure>
 
 And a prototype I made with <a href="http://fritzing.org/" title="Fritzing" target="_blank">Fritzing</a>
 
 <figure style="text-align: center;">
-	<a title="Tiny Pong VGA - Fritzing" href="{{ site.url }}/images/tinypong/tinypong_fritzing.png" target="_blank"><img src="{{ site.url }}/images/tinypong/tinypong_fritzing.png" alt="Tiny Pong VGA - Fritzing" title="Tiny Pong VGA - Fritzing"/></a>
+	<a title="Tiny Pong VGA - Fritzing" href="{{ site.baseurl }}/images/tinypong/tinypong_fritzing.png" target="_blank"><img src="{{ site.baseurl }}/images/tinypong/tinypong_fritzing.png" alt="Tiny Pong VGA - Fritzing" title="Tiny Pong VGA - Fritzing"/></a>
 	<figcaption>Tiny Pong VGA - Fritzing</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-	<a title="VGA pinout" href="{{ site.url }}/images/tinypong/vga_pinout.jpg" target="_blank"><img src="{{ site.url }}/images/tinypong/vga_pinout.jpg" alt="VGA pinout" title="VGA pinout"/></a>
+	<a title="VGA pinout" href="{{ site.baseurl }}/images/tinypong/vga_pinout.jpg" target="_blank"><img src="{{ site.baseurl }}/images/tinypong/vga_pinout.jpg" alt="VGA pinout" title="VGA pinout"/></a>
 	<figcaption>VGA pinout</figcaption>
 </figure>
 

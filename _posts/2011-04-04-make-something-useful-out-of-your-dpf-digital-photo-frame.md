@@ -23,7 +23,7 @@ tags:
   - USB
 comments: true
 ---
-[<img src="{{ site.url }}/images/dpf/dpf_pie.jpg" alt="" title="DPF"/>]({{ site.url }}/images/dpf/dpf_pie.jpg)
+[<img src="{{ site.baseurl }}/images/dpf/dpf_pie.jpg" alt="" title="DPF"/>]({{ site.baseurl }}/images/dpf/dpf_pie.jpg)
 We had this great idea of using an old digital photo frame from [smartparts](http://smartpartsproducts.com/content/index.html) to display some useful reports at work.
 
 In this case, useful will mean that the reports (pictures in the frame) needs to be automatically updated, with no human intervention.
@@ -34,7 +34,7 @@ Take a look to this post, you may find something useful for your own DIY project
 
 There are probably several ways to update the pictures dynamically, we have chosen the easiest one: connect it to an old Itona computer (we&#8217;ve plenty of these crappy machines 300Mhz processor, 512Mb of hard disk) running Ubuntu Linux and then make a script that will periodically (cron) gather the info we want to show from the Internet convert it to JPG images, and update the photo frame.
 
-[<img src="{{ site.url }}/images/dpf/itona.jpg" alt="" title="Itona"/>]({{ site.url }}/images/dpf/itona.jpg)
+[<img src="{{ site.baseurl }}/images/dpf/itona.jpg" alt="" title="Itona"/>]({{ site.baseurl }}/images/dpf/itona.jpg)
 
 Too easy? Ok, a real ninja hacker solution would had been taking apart the photo frame, put a Linux on the nice ARC processor through the JTAG interface and then plug some Wi-Fi dongle and do Everything directly on the DPF itself. But that&#8217;s just dreaming, we don&#8217;t have experience nor time for that.
 
@@ -45,26 +45,26 @@ So we setup everything: we made the scripts to generate the images, installed Ub
 After googling, I&#8217;ve found [a circuit](http://forum.allaboutcircuits.com/showthread.php?t=38544&page=2) that seemed usable for this purpose. Just a couple transistors and a few resistors is everything we need. Crop the board and put it in a case&#8230;
 
 <figure class="half">
-	<a title="DPF Circuit 1" href="{{ site.url }}/images/dpf/dpf_circuit_01.jpg" target="_blank"><img src="{{ site.url }}/images/dpf/dpf_circuit_01.jpg" alt="" title="DPF Circuit 1"/></a>
-	<a title="DPF Circuit 2" href="{{ site.url }}/images/dpf/dpf_circuit_02.jpg" target="_blank"><img src="{{ site.url }}/images/dpf/dpf_circuit_02.jpg" alt="" title="DPF Circuit 2"/></a>
+	<a title="DPF Circuit 1" href="{{ site.baseurl }}/images/dpf/dpf_circuit_01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/dpf/dpf_circuit_01.jpg" alt="" title="DPF Circuit 1"/></a>
+	<a title="DPF Circuit 2" href="{{ site.baseurl }}/images/dpf/dpf_circuit_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/dpf/dpf_circuit_02.jpg" alt="" title="DPF Circuit 2"/></a>
 </figure>
 
 <figure class="half">
-	<a title="DPF Circuit 3" href="{{ site.url }}/images/dpf/dpf_circuit_03.jpg" target="_blank"><img src="{{ site.url }}/images/dpf/dpf_circuit_03.jpg" alt="" title="DPF Circuit 3"/></a>
-	<a title="DPF Circuit 4" href="{{ site.url }}/images/dpf/dpf_circuit_04.jpg" target="_blank"><img src="{{ site.url }}/images/dpf/dpf_circuit_04.jpg" alt="" title="DPF Circuit 4"/></a>
+	<a title="DPF Circuit 3" href="{{ site.baseurl }}/images/dpf/dpf_circuit_03.jpg" target="_blank"><img src="{{ site.baseurl }}/images/dpf/dpf_circuit_03.jpg" alt="" title="DPF Circuit 3"/></a>
+	<a title="DPF Circuit 4" href="{{ site.baseurl }}/images/dpf/dpf_circuit_04.jpg" target="_blank"><img src="{{ site.baseurl }}/images/dpf/dpf_circuit_04.jpg" alt="" title="DPF Circuit 4"/></a>
 </figure>
 
 ### Finally, the whole thing mounted:
 
 The Itona hidden behind the desk&#8230;
 
-[<img src="{{ site.url }}/images/dpf/itona_setup.jpg" alt="" title="Itona Setup"/>]({{ site.url }}/images/dpf/itona_setup.jpg)
+[<img src="{{ site.baseurl }}/images/dpf/itona_setup.jpg" alt="" title="Itona Setup"/>]({{ site.baseurl }}/images/dpf/itona_setup.jpg)
 
 And the DPF showing the reports!! 😀
 
 <figure class="half">
-	<a title="DPF Report 1" href="{{ site.url }}/images/dpf/dpf_report_01.jpg" target="_blank"><img src="{{ site.url }}/images/dpf/dpf_report_01.jpg" alt="" title="DPF Report 1"/></a>
-	<a title="DPF Report 2" href="{{ site.url }}/images/dpf/dpf_report_02.jpg" target="_blank"><img src="{{ site.url }}/images/dpf/dpf_report_02.jpg" alt="" title="DPF Report 2"/></a>
+	<a title="DPF Report 1" href="{{ site.baseurl }}/images/dpf/dpf_report_01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/dpf/dpf_report_01.jpg" alt="" title="DPF Report 1"/></a>
+	<a title="DPF Report 2" href="{{ site.baseurl }}/images/dpf/dpf_report_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/dpf/dpf_report_02.jpg" alt="" title="DPF Report 2"/></a>
 </figure>
 
 For the circuit you will need:
@@ -78,7 +78,7 @@ For the circuit you will need:
 
 **IMPORTANT: following image borrowed from http://forum.allaboutcircuits.com/showthread.php?t=38544&page=2**
 
-[<img src="{{ site.url }}/images/dpf/5v_switch.png" alt="" title="Itona Setup"/>]({{ site.url }}/images/dpf/5v_switch.png)
+[<img src="{{ site.baseurl }}/images/dpf/5v_switch.png" alt="" title="Itona Setup"/>]({{ site.baseurl }}/images/dpf/5v_switch.png)
 
 I&#8217;ve connected the control-in to the PIN #2 of the DB-25, and the PIN #20 to the ground.
 

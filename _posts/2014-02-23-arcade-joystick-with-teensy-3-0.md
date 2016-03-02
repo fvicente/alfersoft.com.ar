@@ -80,20 +80,20 @@ void loop() {
 No explanation needed<figure id="attachment_700" style="width: 300px" class="wp-caption aligncenter">
 
 <figure style="text-align: center;">
-	<a href="{{ site.url }}/images/joystick.png" target="_blank"><img src="{{ site.url }}/images/joystick.png" alt="Joystick Connection Diagram" title="Joystick Connection Diagram"/></a>
+	<a href="{{ site.baseurl }}/images/joystick.png" target="_blank"><img src="{{ site.baseurl }}/images/joystick.png" alt="Joystick Connection Diagram" title="Joystick Connection Diagram"/></a>
 	<figcaption class="wp-caption-text">Joystick Connection Diagram</figcaption>
 </figure> 
 
 ## Pictures
 
 <figure class="third">
-	<a title="Joystick connections" href="{{ site.url }}/images/joystick_01.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_01.jpg" alt="Joystick connections" /></a>
-	<a title="Box holes" href="{{ site.url }}/images/joystick_02.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_02.jpg" alt="Box holes" /></a>
-	<a title="Inside Joystick" href="{{ site.url }}/images/joystick_03.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_03.jpg" alt="Inside Joystick" /></a>
+	<a title="Joystick connections" href="{{ site.baseurl }}/images/joystick_01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/joystick_01.jpg" alt="Joystick connections" /></a>
+	<a title="Box holes" href="{{ site.baseurl }}/images/joystick_02.jpg" target="_blank"><img src="{{ site.baseurl }}/images/joystick_02.jpg" alt="Box holes" /></a>
+	<a title="Inside Joystick" href="{{ site.baseurl }}/images/joystick_03.jpg" target="_blank"><img src="{{ site.baseurl }}/images/joystick_03.jpg" alt="Inside Joystick" /></a>
 </figure>
 
 <figure class="third">
-	<a title="Inside Joystick" href="{{ site.url }}/images/joystick_04.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_04.jpg" alt="Inside Joystick" /></a>
-	<a title="Joystick" href="{{ site.url }}/images/joystick_05.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_05.jpg" alt="Joystick" /></a>
-	<a title="Joystick testing with uncle Alf" href="{{ site.url }}/images/joystick_06.jpg" target="_blank"><img src="{{ site.url }}/images/joystick_06.jpg" alt="Joystick testing with uncle Alf" /></a>
+	<a title="Inside Joystick" href="{{ site.baseurl }}/images/joystick_04.jpg" target="_blank"><img src="{{ site.baseurl }}/images/joystick_04.jpg" alt="Inside Joystick" /></a>
+	<a title="Joystick" href="{{ site.baseurl }}/images/joystick_05.jpg" target="_blank"><img src="{{ site.baseurl }}/images/joystick_05.jpg" alt="Joystick" /></a>
+	<a title="Joystick testing with uncle Alf" href="{{ site.baseurl }}/images/joystick_06.jpg" target="_blank"><img src="{{ site.baseurl }}/images/joystick_06.jpg" alt="Joystick testing with uncle Alf" /></a>
 </figure>

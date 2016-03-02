@@ -21,7 +21,7 @@ I don&#8217;t have a Sony PlayStation. But someone nicknamed &#8220;STRONDHA&#82
 
 <!--more-->
 
-[<img src="{{ site.url }}/images/sony_spam.png" alt="Sony sending unwanted e-mails"/>]({{ site.url }}/images/sony_spam.png)
+[<img src="{{ site.baseurl }}/images/sony_spam.png" alt="Sony sending unwanted e-mails"/>]({{ site.baseurl }}/images/sony_spam.png)
 
 ## Stop it
 

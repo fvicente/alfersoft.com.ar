@@ -18,7 +18,7 @@ tags:
   - windows
 comments: true
 ---
-[<img src="{{ site.url }}/images/spongebob.jpg" alt="spongebob"/>]({{ site.url }}/images/spongebob.jpg)
+[<img src="{{ site.baseurl }}/images/spongebob.jpg" alt="spongebob"/>]({{ site.baseurl }}/images/spongebob.jpg)
 
 <!--more-->
 
