@@ -1,5 +1,5 @@
 ---
-id: 131
+uid: 131
 title: How to calculate the space used by files in Linux?
 date: 2010-02-19T15:09:26+00:00
 author: fvicente

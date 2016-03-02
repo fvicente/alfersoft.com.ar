@@ -1,5 +1,5 @@
 ---
-id: 103
+uid: 103
 title: Simplified DES (S-DES) file encryption implementation in C
 date: 2009-05-08T17:34:11+00:00
 author: fvicente

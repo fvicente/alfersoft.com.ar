@@ -1,5 +1,5 @@
 ---
-id: 123
+uid: 123
 title: How do I add VNC to Terminal Server Client in Ubuntu?
 date: 2010-02-19T14:45:14+00:00
 author: fvicente

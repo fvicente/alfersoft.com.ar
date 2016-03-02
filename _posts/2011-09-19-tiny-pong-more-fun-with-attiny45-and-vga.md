@@ -1,5 +1,5 @@
 ---
-id: 284
+uid: 284
 title: 'Tiny Pong: More fun with ATtiny45 and VGA'
 date: 2011-09-19T23:54:13+00:00
 author: fvicente

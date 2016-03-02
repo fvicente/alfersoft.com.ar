@@ -1,5 +1,5 @@
 ---
-id: 296
+uid: 296
 title: Migrating GAE Blobstore to an HRD application
 date: 2011-11-14T00:09:40+00:00
 author: fvicente

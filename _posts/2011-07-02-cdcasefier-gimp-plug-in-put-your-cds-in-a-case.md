@@ -1,5 +1,5 @@
 ---
-id: 248
+uid: 248
 title: 'CDCasefier Gimp plug-in &#8211; Put your CDs in a case'
 date: 2011-07-02T21:41:20+00:00
 author: fvicente

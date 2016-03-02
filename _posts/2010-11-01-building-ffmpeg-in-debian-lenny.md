@@ -1,5 +1,5 @@
 ---
-id: 153
+uid: 153
 title: Building ffmpeg in Debian (Lenny)
 date: 2010-11-01T12:11:53+00:00
 author: fvicente

@@ -1,5 +1,5 @@
 ---
-id: 128
+uid: 128
 title: How do I compare two binary files on Linux?
 date: 2010-02-19T14:51:00+00:00
 author: fvicente

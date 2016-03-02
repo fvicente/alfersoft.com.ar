@@ -1,5 +1,5 @@
 ---
-id: 221
+uid: 221
 title: Make something useful out of your DPF (Digital Photo Frame)
 date: 2011-04-04T13:52:05+00:00
 author: fvicente

@@ -1,5 +1,5 @@
 ---
-id: 168
+uid: 168
 title: POIMan for Sygic
 date: 2011-02-10T12:57:59+00:00
 author: fvicente

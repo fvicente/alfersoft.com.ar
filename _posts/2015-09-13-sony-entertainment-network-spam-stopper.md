@@ -1,5 +1,5 @@
 ---
-id: 770
+uid: 770
 title: Sony Entertainment Network spam stopper
 date: 2015-09-13T00:53:20+00:00
 author: fvicente

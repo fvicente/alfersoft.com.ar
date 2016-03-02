@@ -1,5 +1,5 @@
 ---
-id: 262
+uid: 262
 title: 'Scoreboard (Part 1: VGA signal from an ATtiny45)'
 date: 2011-08-30T00:09:52+00:00
 author: fvicente

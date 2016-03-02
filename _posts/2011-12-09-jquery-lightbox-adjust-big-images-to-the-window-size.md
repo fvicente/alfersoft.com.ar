@@ -1,5 +1,5 @@
 ---
-id: 350
+uid: 350
 title: 'jQuery Lightbox: Adjust big images to the window size'
 date: 2011-12-09T09:21:27+00:00
 author: fvicente

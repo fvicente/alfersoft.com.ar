@@ -1,8 +1,8 @@
 {% if site.owner.disqus-shortname %}
 <script>
     var disqus_config = function () {
-        this.page.url = '{{ site.url }}{{ page.permalink }}';
-        this.page.identifier = '{{ page.id }}';
+        this.page.url = 'http://www.alfersoft.com.ar/blog{{ page.permalink }}';
+        this.page.identifier = '{{ page.uid }} {{ page.guid }}';
     };
     (function() {  // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');

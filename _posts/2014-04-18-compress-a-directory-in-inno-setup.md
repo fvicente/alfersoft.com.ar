@@ -1,5 +1,5 @@
 ---
-id: 709
+uid: 709
 title: Compress a directory in inno setup
 date: 2014-04-18T21:03:08+00:00
 author: fvicente

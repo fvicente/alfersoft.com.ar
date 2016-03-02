@@ -1,5 +1,5 @@
 ---
-id: 752
+uid: 752
 title: 'Denise&#8217;s birthday problem solution (in Python)'
 date: 2015-06-17T11:16:19+00:00
 author: fvicente

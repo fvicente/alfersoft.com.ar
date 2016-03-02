@@ -1,5 +1,5 @@
 ---
-id: 5
+uid: 5
 title: Converting Visual Studio solutions to SCons
 date: 2008-05-23T20:19:46+00:00
 author: fvicente

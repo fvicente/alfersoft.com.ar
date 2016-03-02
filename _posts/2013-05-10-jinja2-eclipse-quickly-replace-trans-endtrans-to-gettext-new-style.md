@@ -1,5 +1,5 @@
 ---
-id: 604
+uid: 604
 title: 'Jinja2 + Eclipse: quickly replace trans / endtrans to gettext( ) new style'
 date: 2013-05-10T22:02:58+00:00
 author: fvicente

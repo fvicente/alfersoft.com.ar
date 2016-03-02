@@ -1,5 +1,5 @@
 ---
-id: 543
+uid: 543
 title: 'FAIL: How to NOT try to hack a cheap GPRS module to change its IMEI'
 date: 2012-07-26T11:30:51+00:00
 author: fvicente

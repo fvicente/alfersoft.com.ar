@@ -1,5 +1,5 @@
 ---
-id: 320
+uid: 320
 title: Brute force attack a BIOS with Arduino
 date: 2011-11-14T21:55:27+00:00
 author: fvicente

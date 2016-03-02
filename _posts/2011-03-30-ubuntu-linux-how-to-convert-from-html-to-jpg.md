@@ -1,5 +1,5 @@
 ---
-id: 202
+uid: 202
 title: 'Ubuntu Linux: How to Convert from HTML to JPG'
 date: 2011-03-30T12:03:41+00:00
 author: fvicente

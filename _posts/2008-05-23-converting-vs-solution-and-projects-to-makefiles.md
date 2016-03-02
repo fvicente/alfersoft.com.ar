@@ -1,5 +1,5 @@
 ---
-id: 4
+uid: 4
 title: Converting Visual Studio solutions to Makefiles
 date: 2008-05-23T00:27:05+00:00
 author: fvicente

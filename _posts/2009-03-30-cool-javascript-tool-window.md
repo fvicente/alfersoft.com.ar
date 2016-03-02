@@ -1,5 +1,5 @@
 ---
-id: 17
+uid: 17
 title: Cool JavaScript Tool Window
 date: 2009-03-30T22:40:00+00:00
 author: fvicente
