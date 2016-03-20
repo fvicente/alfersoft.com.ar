@@ -19,6 +19,7 @@ tags:
   - python
   - upload
 comments: true
+excerpt: Progress bar for attachment uploads with mod_python
 ---
 <figure>
 	<img title="Upload Progress with mod_python" src="{{ site.baseurl }}/images/uprogress.jpg" alt="Upload Progress with mod_python" />

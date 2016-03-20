@@ -21,6 +21,7 @@ tags:
   - virtual
   - windows
 comments: true
+excerpt: Capture the parallel port data using a small kernel module for Linux
 ---
 [<img src="{{ site.baseurl }}/images/parportsnif.png" alt="Parallel Port Sniffer" title="Parallel Port Sniffer"/>]({{ site.baseurl }}/images/parportsnif.png)
 

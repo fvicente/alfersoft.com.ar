@@ -15,6 +15,7 @@ tags:
   - port
   - rxtx
 comments: true
+excerpt: Some optimizations for the RXTX library
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/db25.jpg">

@@ -17,6 +17,7 @@ tags:
   - tortoisesvn
   - windows
 comments: true
+excerpt: How to configure TortoiseSVN to use a non-standard SSH port
 ---
 [<img src="{{ site.baseurl }}/images/spongebob.jpg" alt="spongebob"/>]({{ site.baseurl }}/images/spongebob.jpg)
 

@@ -14,6 +14,7 @@ tags:
   - part
   - replacemente
 comments: true
+excerpt: This is a very simple model for printing Ludomatic part replacement. Ludomatic is a popular variation of Ludo
 ---
 This is a very simple model for printing Ludomatic part replacement. Ludomatic is a popular variation of [Ludo](http://es.wikipedia.org/wiki/Ludo).
 

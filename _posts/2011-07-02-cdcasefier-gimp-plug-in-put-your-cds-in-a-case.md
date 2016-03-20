@@ -17,6 +17,7 @@ tags:
   - plug-in
   - python
 comments: true
+excerpt: This Python-Fu plug-in for Gimp will let you put a scanned CD photo into a virtual case
 ---
 [<img src="{{ site.baseurl }}/images/cdcasefy.png" alt="" title="cdcasefy"/>]({{ site.baseurl }}/images/cdcasefy.png)
 

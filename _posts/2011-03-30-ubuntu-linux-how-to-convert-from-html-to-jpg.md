@@ -20,6 +20,7 @@ tags:
   - ubuntu
   - xhtml
 comments: true
+excerpt: Convert from HTML to JPG from linux terminal. Actually, the convertsion is from HTML to PDF and then from PDF to JPG.
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/question.png">

@@ -17,6 +17,7 @@ tags:
   - uart
   - VGA
 comments: true
+excerpt: Make ATtiny read UART from cheap Wireless Bluetooth V2.0 RS232 TTL Transceiver Module
 ---
 <img src="{{ site.baseurl }}/images/bt_small.jpg" alt="Bluetooth Module" title="Bluetooth Module"/>
 

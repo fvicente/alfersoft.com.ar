@@ -16,6 +16,7 @@ tags:
   - parse
   - plain C
 comments: true
+excerpt: Extend udp / json-parser functionality by adding json edition capabilities
 ---
 Recently, I needed a json parser for a small C project, and -after googling- found this <a href="https://github.com/udp/json-parser" title="udp / json-parser" target="_blank">great library udp / json-parser</a>.
 

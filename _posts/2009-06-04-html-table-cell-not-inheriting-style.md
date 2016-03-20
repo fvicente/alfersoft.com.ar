@@ -9,6 +9,7 @@ permalink: /2009/06/04/html-table-cell-not-inheriting-style/
 categories:
   - Programming FAQ
 comments: true
+excerpt: Never forget to declare the DOCTYPE at the beginning of your HTML, otherwise strange things will happen
 ---
 The goal of this new blog category called &#8220;Programming FAQ&#8221; is to publish short posts with day to day programming problems and their solutions, or at least provide a tip to find the proper solution to your problem. And today we start with this simple and stupid problem that can happen to anyone with poor HTML experience like me. &#8220;My HTML table does not seems to inherit the style from a parent element&#8221;, here is the example:
   

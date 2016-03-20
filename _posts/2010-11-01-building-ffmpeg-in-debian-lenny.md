@@ -19,6 +19,7 @@ tags:
   - linux
   - mp3
 comments: true
+excerpt: Building ffmpeg with AAC support might be trickier than you tought
 ---
 I&#8217;ve adapted the instructions from [this Ubuntu thread](http://ubuntuforums.org/showthread.php?t=786095) for Debian Lenny.
 

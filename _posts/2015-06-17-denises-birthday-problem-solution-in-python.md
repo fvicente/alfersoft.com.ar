@@ -16,6 +16,7 @@ tags:
   - script
   - solution
 comments: true
+excerpt: A python script to resolve Denise's birthday problem
 ---
 <a href="https://www.reddit.com/r/puzzles/comments/3785h9/when_is_denises_birthday/" target="_blank">Denise&#8217;s birthday problem</a> solution (in Python)
 

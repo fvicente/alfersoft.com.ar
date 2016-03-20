@@ -21,6 +21,7 @@ tags:
   - phone
   - SMS
 comments: true
+excerpt: Limit call, SMS and Internet usage with this Android application
 ---
 [<img src="{{ site.baseurl }}/images/lock_128.png" alt="FullControl" title="FullControl"/>]({{ site.baseurl }}/images/lock_128.png)
 

@@ -17,6 +17,7 @@ tags:
   - monitor
   - VGA
 comments: true
+excerpt: This project aims to display a scoreboard in a regular VGA monitor, remotely controlled with an Android device (cellphone, tablet) via Bluetooth
 ---
 This project aims to display a scoreboard in a regular VGA monitor, remotely controlled with an Android device (cellphone, tablet) via Bluetooth.
 

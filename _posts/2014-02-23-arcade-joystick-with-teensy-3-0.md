@@ -16,6 +16,7 @@ tags:
   - teensy
   - USB
 comments: true
+excerpt: DIY Arcade Joystick with Teensy
 ---
 Do you have a spare Teensy 3.0, like I did, and you want to (under) use it? this might be a good one-afternoon DIY project: an Arcade Joystick.
   

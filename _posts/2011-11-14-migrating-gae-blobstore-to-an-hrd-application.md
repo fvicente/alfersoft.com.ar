@@ -21,6 +21,7 @@ tags:
   - migrate
   - migration
 comments: true
+excerpt: Migrate your Google App Engine application to High Replication Database scheme
 ---
 [<img src="{{ site.baseurl }}/images/gae-logo.png" alt="Google App Engine" title="google app engine"/>]({{ site.baseurl }}/images/gae-logo.png)
 

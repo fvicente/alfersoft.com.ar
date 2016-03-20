@@ -17,6 +17,7 @@ tags:
   - googleappenginelauncher
   - macos
 comments: true
+excerpt: Quick recipe to enable source code change detection on the GoogleAppEngineLauncher (Mac OS X Lion)
 ---
 Quick recipe to enable source code change detection on the GoogleAppEngineLauncher (Mac OS X Lion).
 

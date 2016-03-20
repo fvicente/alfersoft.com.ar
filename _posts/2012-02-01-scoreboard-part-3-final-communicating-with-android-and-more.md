@@ -19,6 +19,7 @@ tags:
   - scoreboard
   - VGA
 comments: true
+excerpt: A digital VGA scoreboard project based on ATtiny45, using Wireless Bluetooth V2.0 RS232 TTL Transceiver Module that communicates with Android
 ---
 [<img src="{{ site.baseurl }}/images/scoreboard/scoreboard_02.jpg" alt="Scoreboard - Final" title="Scoreboard - Final"/>]({{ site.baseurl }}/images/scoreboard/scoreboard_02.jpg)
 

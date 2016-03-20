@@ -19,6 +19,7 @@ tags:
   - socket
   - USB
 comments: true
+excerpt: Control (switch off/on) two power sockets with a computer by using its USB port using PIC18F4550 microcontroller
 ---
 ## Introduction
 

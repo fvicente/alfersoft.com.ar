@@ -16,6 +16,7 @@ tags:
   - sony
   - spam
 comments: true
+excerpt: How to avoid Sony Entertainment Network e-mail notifications for an account that someone created using your address
 ---
 I don&#8217;t have a Sony PlayStation. But someone nicknamed &#8220;STRONDHA&#8221; has one, and somehow he managed to use my personal e-mail address to create his account. Oddly, Sony didn&#8217;t send any e-mail asking to confirm my e-mail as the owner of the account, and starting spamming every time this person bought a game in their virtual store.
 

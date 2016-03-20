@@ -14,6 +14,7 @@ tags:
   - opinion
   - review
 comments: true
+excerpt: Some quick thoughts about the Arduino Duemilanove board
 ---
 Some quick thoughts about the <a href="http://www.arduino.cc/en/Main/ArduinoBoardDuemilanove" title="Arduino Duemilanove Board" target="_blank">Arduino Duemilanove</a> board.
 

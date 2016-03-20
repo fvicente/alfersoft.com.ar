@@ -17,6 +17,7 @@ tags:
   - scanned
   - wxpython
 comments: true
+excerpt: An utility script written in python that uses wxPython to edit your scanned images (JPEG, BMP, TIFF, etc.) obtain sub-images, rotate and save them
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/cutnrot.jpg">

@@ -18,6 +18,7 @@ tags:
   - scale
   - shrink
 comments: true
+excerpt: How to calibrate Z axis on a 3D printer
 ---
 [<img src="{{ site.baseurl }}/images/3d_printer_z_axis.jpg" alt="Z Axis Calibration"/>]({{ site.baseurl }}/images/3d_printer_z_axis.jpg)
 

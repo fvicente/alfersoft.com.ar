@@ -17,6 +17,7 @@ tags:
   - scriptaculous
   - window
 comments: true
+excerpt: A JavaScript movable and resizable floating tool window
 ---
 <figure>
 	<img title="Tool Window" src="{{ site.baseurl }}/images/toolwindow.jpg" alt="Tool Window"/>

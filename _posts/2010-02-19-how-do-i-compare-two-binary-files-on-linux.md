@@ -18,6 +18,7 @@ tags:
   - linux
   - meld
 comments: true
+excerpt: How to compare two binary files on Linux terminal using hexdump and diff
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/question.png">

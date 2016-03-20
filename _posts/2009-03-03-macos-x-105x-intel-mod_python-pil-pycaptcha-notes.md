@@ -19,6 +19,7 @@ tags:
   - pycaptcha
   - python
 comments: true
+excerpt: If you have a Mac OS X Leopard on an Intel platform, and you are interested in installing mod\_python using your default apache setup and the python that comes with the Framework, even more if you want to give PyCAPTCHA a try together with mod\_python, then check out this post!
 ---
 <figure>
 	<img title="Python" alt="Python" src="{{ site.baseurl }}/images/python.jpg">

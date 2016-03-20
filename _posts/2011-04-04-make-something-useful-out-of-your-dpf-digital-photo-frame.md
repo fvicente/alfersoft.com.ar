@@ -22,6 +22,7 @@ tags:
   - switch
   - USB
 comments: true
+excerpt: Connect a digital photo frame to a computer and keep updating it with useful information displayed as pictures
 ---
 [<img src="{{ site.baseurl }}/images/dpf/dpf_pie.jpg" alt="" title="DPF"/>]({{ site.baseurl }}/images/dpf/dpf_pie.jpg)
 We had this great idea of using an old digital photo frame from [smartparts](http://smartpartsproducts.com/content/index.html) to display some useful reports at work.

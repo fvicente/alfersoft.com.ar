@@ -9,6 +9,7 @@ permalink: /2010/06/22/motherboard-bios-not-saving-changes/
 categories:
   - Hardware repairing
 comments: true
+excerpt: If the problem is not the battery, try replacing a transistor on the motherboard
 ---
 If your motherboard&#8217;s BIOS is not saving changes and you&#8217;ve already changed the CR2032 battery, you might have an electric problem. Try changing the transistor near the battery holder, similar to the one shown in the image:
 

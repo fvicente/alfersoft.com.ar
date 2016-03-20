@@ -19,6 +19,7 @@ tags:
   - hack
   - password
 comments: true
+excerpt: The goal of this experiment is to convert the Arduino board into an USB keyboard plus a VGA sniffer to crack the password of a standard BIOS using the Brute force attack method
 ---
 [<img src="{{ site.baseurl }}/images/bios/bios_hack_01.jpg" alt="BIOS hack" title="BIOS hack"/>]({{ site.baseurl }}/images/bios/bios_hack_01.jpg)
 

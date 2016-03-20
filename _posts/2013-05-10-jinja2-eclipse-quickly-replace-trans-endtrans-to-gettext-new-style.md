@@ -17,6 +17,7 @@ tags:
   - replace
   - trans
 comments: true
+excerpt: A regular expression to quickly replace trans and endtrans old\'s jinja2 to gettext new style
 ---
 <!--more-->
 

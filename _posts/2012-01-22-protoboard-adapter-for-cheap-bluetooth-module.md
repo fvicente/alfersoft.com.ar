@@ -16,6 +16,7 @@ tags:
   - module
   - protoboard
 comments: true
+excerpt: Protoboard adapter for Wireless Bluetooth V2.0 RS232 TTL Transceiver Module
 ---
 [<img src="{{ site.baseurl }}/images/bt_adaptor_01.jpg" alt="Protoboard adapter for Bluetooth module" title="Protoboard adapter for Bluetooth module"/>]({{ site.baseurl }}/images/bt_adaptor_01.jpg)
 

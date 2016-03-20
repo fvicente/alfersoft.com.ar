@@ -18,6 +18,7 @@ tags:
   - photo size
   - plugin
 comments: true
+excerpt: Adjust big images to the window size on Lightbox
 ---
 [<img src="{{ site.baseurl }}/images/jquery-lightbox-alfersoft-mod.png" alt="" title="jQuery lightBox AlferSoft Mod"/>]({{ site.baseurl }}/images/jquery-lightbox-alfersoft-mod.png)
 

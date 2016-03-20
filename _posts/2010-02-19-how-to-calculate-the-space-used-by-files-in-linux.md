@@ -20,6 +20,7 @@ tags:
   - sum
   - used
 comments: true
+excerpt: How to calculate the space used by files in Linux
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/question.png">

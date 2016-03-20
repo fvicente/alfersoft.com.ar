@@ -18,6 +18,7 @@ tags:
   - VGA
   - video
 comments: true
+excerpt: VGA Pong game based on ATtiny microcontroller, joystick is a button!
 ---
 [<img src="{{ site.baseurl }}/images/tinypong/push_button.png" alt="Tiny Pong VGA push button" title="Tiny Pong VGA push button">]({{ site.baseurl }}/images/tinypong/push_button.png)
 

@@ -19,6 +19,7 @@ tags:
   - ubuntu
   - x100p
 comments: true
+excerpt: Installing Asterisk PBX with an Intel X100P clone FXO to allow my extensions to make (and receive) phone calls to the telco line
 ---
 ## [<img class="size-full wp-image-78 alignnone" style="margin: 10px 0px;" title="asterisk" src="{{ site.baseurl }}/images/asterisk.png" alt="" width="162" height="91" />]({{ site.baseurl }}/images/asterisk.png)
 

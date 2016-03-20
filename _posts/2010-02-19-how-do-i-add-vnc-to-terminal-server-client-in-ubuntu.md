@@ -16,6 +16,7 @@ tags:
   - ubuntu
   - vnc
 comments: true
+excerpt: How to add VNC to Terminal Server Client in Ubuntu
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/question.png">

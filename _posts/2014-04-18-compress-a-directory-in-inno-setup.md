@@ -19,6 +19,7 @@ tags:
   - windows
   - zip
 comments: true
+excerpt: Inno setup script to zip a directory using Windows built-in compression
 ---
 <a href="http://www.jrsoftware.org/isinfo.php" title="Inno Setup" target="_blank">Inno setup</a> script to zip a directory using Windows built-in compression.
 

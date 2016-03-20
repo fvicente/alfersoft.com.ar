@@ -18,6 +18,7 @@ tags:
   - progress
   - upload
 comments: true
+excerpt: Firefox add-on to display file upload progress
 ---
 <figure>
 	<img alt="UploadProgress add-on" src="{{ site.baseurl }}/images/upload.png" title="UploadProgress add-on">

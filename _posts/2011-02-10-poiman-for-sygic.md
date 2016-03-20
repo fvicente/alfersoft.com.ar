@@ -16,6 +16,7 @@ tags:
   - sygic
   - update
 comments: true
+excerpt: An Android application that lets you keep your Sygic's Point of Interests (POIs) up to date and manage them (add / remove) in an easy way
 ---
 [<img src="{{ site.baseurl }}/images/poiman-256.png" alt="" title="POIMan for Sygic" />]({{ site.baseurl }}/images/poiman-256.png)
 

@@ -19,6 +19,7 @@ tags:
   - MGD1602B
   - module
 comments: true
+excerpt: A conversor board for generic MGD1602B 16x2 line displays to I2C
 ---
 <a href="{{ site.baseurl }}/images/lcd_i2c.jpg" target="_blank"><img src="{{ site.baseurl }}/images/lcd_i2c.jpg" alt="LCD to I2C" title="LCD to I2C"/></a>
 

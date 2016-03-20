@@ -15,6 +15,7 @@ tags:
   - makefile
   - visual studio
 comments: true
+excerpt: A python script to convert Microsoft Visual Studio 2005 solution files (\*.sln) and the associated project files (\*.vcproj) into a set of Makefile
 ---
 A python script to convert Microsoft Visual Studio 2005 solution files (\*.sln) and the associated project files (\*.vcproj) into a set of Makefile&#8217;s.
 

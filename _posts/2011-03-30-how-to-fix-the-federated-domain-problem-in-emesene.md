@@ -19,6 +19,7 @@ tags:
   - issue
   - message
 comments: true
+excerpt: Workaround to avoid displaying the 'federated domain' error message on emesene
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/emesene-logo.png">

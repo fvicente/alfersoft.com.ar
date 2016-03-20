@@ -11,6 +11,7 @@ categories:
 tags:
   - C encryption S-DES simplified DES cipher
 comments: true
+excerpt: Simplified DES (S-DES) encryption algorithm is not supposed to be secure at all, in fact it was made for educational purposes.
 ---
 <figure>
 	<img title="Simplified DES" src="{{ site.baseurl }}/images/lock.png" alt="Simplified DES"/>

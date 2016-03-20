@@ -20,6 +20,7 @@ tags:
   - virtual
   - wired
 comments: true
+excerpt: How to create two wired virtual serial ports on Linux using socat
 ---
 <figure>
 	<img src="{{ site.baseurl }}/images/question.png">

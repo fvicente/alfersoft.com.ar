@@ -17,6 +17,7 @@ tags:
   - module
   - SMS
 comments: true
+excerpt: Bad hacking techniques
 ---
 <a href="{{ site.baseurl }}/images/gprs_01.jpg" target="_blank"><img src="{{ site.baseurl }}/images/gprs_01.jpg" alt="GPRS module before tear down" title="GPRS module before tear down"/></a>
 

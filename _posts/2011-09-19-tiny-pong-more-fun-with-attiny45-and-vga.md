@@ -20,6 +20,7 @@ tags:
   - VGA
   - video
 comments: true
+excerpt: VGA Pong game based on ATtiny microcontroller
 ---
 I&#8217;m still waiting for my cheap [Bluetooth module from China](http://www.dealextreme.com/p/wireless-bluetooth-rs232-ttl-transceiver-module-80711 "Bluetooth Module") which will serve as an input interface for my [scoreboard project]({{ site.baseurl }}/2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/ "Scoreboard (Part 1: VGA signal from an ATtiny45)"). In the meantime, I&#8217;ll show you how to convert your ATtiny microcontroller into a Pong game (with no input so far).
 
