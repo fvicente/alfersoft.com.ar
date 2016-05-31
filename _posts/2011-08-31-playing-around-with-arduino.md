@@ -5,7 +5,6 @@ date: 2011-08-31T01:10:03+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=277
-permalink: /2011/08/31/playing-around-with-arduino/
 categories:
   - Electronic Projects
 tags:

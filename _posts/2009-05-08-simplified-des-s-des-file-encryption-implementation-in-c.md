@@ -5,7 +5,6 @@ date: 2009-05-08T17:34:11+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=103
-permalink: /2009/05/08/simplified-des-s-des-file-encryption-implementation-in-c/
 categories:
   - Software Development
 tags:

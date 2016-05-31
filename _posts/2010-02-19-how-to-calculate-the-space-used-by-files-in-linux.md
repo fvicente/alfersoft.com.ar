@@ -5,7 +5,6 @@ date: 2010-02-19T15:09:26+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=131
-permalink: /2010/02/19/how-to-calculate-the-space-used-by-files-in-linux/
 categories:
   - Linux FAQ
 tags:

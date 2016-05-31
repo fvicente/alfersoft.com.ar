@@ -5,7 +5,6 @@ date: 2008-05-23T00:27:05+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=4
-permalink: /2008/05/23/converting-vs-solution-and-projects-to-makefiles/
 categories:
   - Software Development
 tags:

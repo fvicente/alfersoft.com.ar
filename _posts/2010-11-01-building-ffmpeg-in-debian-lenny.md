@@ -5,7 +5,6 @@ date: 2010-11-01T12:11:53+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=153
-permalink: /2010/11/01/building-ffmpeg-in-debian-lenny/
 categories:
   - Linux FAQ
   - Software Applications

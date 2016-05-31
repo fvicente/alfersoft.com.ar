@@ -5,7 +5,6 @@ date: 2015-06-17T11:16:19+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=752
-permalink: /2015/06/17/denises-birthday-problem-solution-in-python/
 categories:
   - Software Development
 tags:

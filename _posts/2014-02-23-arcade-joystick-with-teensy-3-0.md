@@ -5,7 +5,6 @@ date: 2014-02-23T23:14:50+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=681
-permalink: /2014/02/23/arcade-joystick-with-teensy-3-0/
 categories:
   - Electronic Projects
 tags:

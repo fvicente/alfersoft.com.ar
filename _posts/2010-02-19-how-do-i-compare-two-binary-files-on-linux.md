@@ -5,7 +5,6 @@ date: 2010-02-19T14:51:00+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=128
-permalink: /2010/02/19/how-do-i-compare-two-binary-files-on-linux/
 categories:
   - Linux FAQ
   - Programming FAQ

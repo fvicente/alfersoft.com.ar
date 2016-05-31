@@ -17,6 +17,7 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-gist
+  - jekyll-paginate
 
 kramdown:
   auto_ids: true
@@ -24,7 +25,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
-
 
 # Octopress
 
@@ -39,6 +39,8 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
+paginate: 5
+paginate_path: "/page/:num"
 
 # Site owner
 owner:

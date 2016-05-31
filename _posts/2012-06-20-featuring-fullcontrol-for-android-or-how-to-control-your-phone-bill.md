@@ -5,7 +5,6 @@ date: 2012-06-20T13:19:27+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=506
-permalink: /2012/06/20/featuring-fullcontrol-for-android-or-how-to-control-your-phone-bill/
 categories:
   - Android
   - Software Applications

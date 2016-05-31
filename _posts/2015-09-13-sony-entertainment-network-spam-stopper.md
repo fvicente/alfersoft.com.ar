@@ -5,7 +5,6 @@ date: 2015-09-13T00:53:20+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=770
-permalink: /2015/09/13/sony-entertainment-network-spam-stopper/
 categories:
   - Programming FAQ
   - Software Development

@@ -5,7 +5,6 @@ date: 2013-04-05T02:17:20+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=586
-permalink: /2013/04/05/enabling-googleappenginelauncher-source-code-change-detection-in-mac-os-x-lion/
 categories:
   - Software Development
 tags:

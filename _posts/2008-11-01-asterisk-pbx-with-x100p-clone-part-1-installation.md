@@ -5,7 +5,6 @@ date: 2008-11-01T20:08:54+00:00
 author: alf
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=28
-permalink: /2008/11/01/asterisk-pbx-with-x100p-clone-part-1-installation/
 categories:
   - Software Applications
 tags:

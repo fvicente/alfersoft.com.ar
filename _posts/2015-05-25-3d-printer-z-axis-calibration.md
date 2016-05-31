@@ -5,7 +5,6 @@ date: 2015-05-25T14:57:22+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=740
-permalink: /2015/05/25/3d-printer-z-axis-calibration/
 categories:
   - 3D Printer
   - Electronic Projects

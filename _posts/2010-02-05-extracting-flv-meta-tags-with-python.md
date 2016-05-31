@@ -5,7 +5,6 @@ date: 2010-02-05T21:07:36+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=112
-permalink: /2010/02/05/extracting-flv-meta-tags-with-python/
 categories:
   - Programming FAQ
 tags:

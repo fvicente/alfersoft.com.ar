@@ -5,7 +5,6 @@ date: 2010-02-19T15:18:32+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=134
-permalink: /2010/02/19/how-to-create-two-wired-virtual-serial-ports-on-linux/
 categories:
   - Linux FAQ
   - Programming FAQ

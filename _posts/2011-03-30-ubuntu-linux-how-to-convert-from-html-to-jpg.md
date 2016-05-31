@@ -5,7 +5,6 @@ date: 2011-03-30T12:03:41+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=202
-permalink: /2011/03/30/ubuntu-linux-how-to-convert-from-html-to-jpg/
 dsq_thread_id:
   - 4582867518
 categories:

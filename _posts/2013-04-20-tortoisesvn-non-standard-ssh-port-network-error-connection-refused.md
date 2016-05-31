@@ -5,7 +5,6 @@ date: 2013-04-20T02:08:19+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=591
-permalink: /2013/04/20/tortoisesvn-non-standard-ssh-port-network-error-connection-refused/
 categories:
   - Programming FAQ
   - Software Development

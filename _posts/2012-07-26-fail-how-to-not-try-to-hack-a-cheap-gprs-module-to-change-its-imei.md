@@ -5,7 +5,6 @@ date: 2012-07-26T11:30:51+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=543
-permalink: /2012/07/26/fail-how-to-not-try-to-hack-a-cheap-gprs-module-to-change-its-imei/
 categories:
   - Electronic Projects
 tags:

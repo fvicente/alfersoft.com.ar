@@ -5,7 +5,6 @@ date: 2011-08-30T00:09:52+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=262
-permalink: /2011/08/30/scoreboard-part-1-vga-signal-from-an-attiny45/
 categories:
   - Electronic Projects
 tags:

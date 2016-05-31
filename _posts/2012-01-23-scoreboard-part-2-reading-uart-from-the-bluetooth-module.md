@@ -5,7 +5,6 @@ date: 2012-01-23T17:41:03+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=394
-permalink: /2012/01/23/scoreboard-part-2-reading-uart-from-the-bluetooth-module/
 categories:
   - Electronic Projects
 tags:

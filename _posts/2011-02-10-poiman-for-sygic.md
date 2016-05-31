@@ -5,7 +5,6 @@ date: 2011-02-10T12:57:59+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=168
-permalink: /2011/02/10/poiman-for-sygic/
 categories:
   - Android
 tags:

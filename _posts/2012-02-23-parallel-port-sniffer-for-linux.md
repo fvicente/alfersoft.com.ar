@@ -5,7 +5,6 @@ date: 2012-02-23T14:20:20+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=443
-permalink: /2012/02/23/parallel-port-sniffer-for-linux/
 categories:
   - Linux FAQ
   - Software Applications

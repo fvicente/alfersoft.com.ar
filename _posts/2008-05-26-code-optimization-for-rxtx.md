@@ -5,7 +5,6 @@ date: 2008-05-26T23:02:13+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=6
-permalink: /2008/05/26/code-optimization-for-rxtx/
 categories:
   - Software Development
 tags:

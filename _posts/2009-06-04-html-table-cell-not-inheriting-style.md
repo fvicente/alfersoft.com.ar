@@ -5,7 +5,6 @@ date: 2009-06-04T21:24:27+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=108
-permalink: /2009/06/04/html-table-cell-not-inheriting-style/
 categories:
   - Programming FAQ
 comments: true

@@ -5,7 +5,6 @@ date: 2011-09-19T23:54:13+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=284
-permalink: /2011/09/19/tiny-pong-more-fun-with-attiny45-and-vga/
 categories:
   - Electronic Projects
 tags:

@@ -5,7 +5,6 @@ date: 2009-03-28T02:07:42+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=97
-permalink: /2009/03/28/file-upload-progress-with-mod_python/
 categories:
   - Software Development
 tags:

@@ -5,7 +5,6 @@ date: 2011-12-09T09:21:27+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=350
-permalink: /2011/12/09/jquery-lightbox-adjust-big-images-to-the-window-size/
 categories:
   - Software Development
 tags:

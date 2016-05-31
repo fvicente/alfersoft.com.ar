@@ -5,7 +5,6 @@ date: 2012-01-22T01:09:16+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=345
-permalink: /2012/01/22/revenge-of-the-tiny-pong-vga-now-controlled-with-a-single-button/
 categories:
   - Electronic Projects
 tags:

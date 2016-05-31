@@ -5,7 +5,6 @@ date: 2009-03-03T23:04:10+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=89
-permalink: /2009/03/03/macos-x-105x-intel-mod_python-pil-pycaptcha-notes/
 categories:
   - Software Development
 tags:

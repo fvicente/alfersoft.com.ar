@@ -5,7 +5,6 @@ date: 2010-02-19T14:45:14+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=123
-permalink: /2010/02/19/how-do-i-add-vnc-to-terminal-server-client-in-ubuntu/
 categories:
   - Linux FAQ
 tags:

@@ -5,7 +5,6 @@ date: 2008-07-08T01:06:25+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=9
-permalink: /2008/07/08/usocket-usb-controlled-socket-with-pic18f4550/
 categories:
   - Electronic Projects
 tags:

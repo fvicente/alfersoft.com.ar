@@ -5,7 +5,6 @@ date: 2008-05-23T20:19:46+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=5
-permalink: /2008/05/23/converting-visual-studio-solutions-to-scons/
 categories:
   - Software Development
 tags:

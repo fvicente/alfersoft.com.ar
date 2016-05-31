@@ -5,7 +5,6 @@ date: 2011-11-14T00:09:40+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=296
-permalink: /2011/11/14/migrating-gae-blobstore-to-an-hrd-application/
 categories:
   - Programming FAQ
   - Software Development

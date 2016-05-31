@@ -5,7 +5,6 @@ date: 2008-06-04T20:24:19+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=8
-permalink: /2008/06/04/slice-and-rotate-images-with-cutnrot/
 categories:
   - Software Development
 tags:

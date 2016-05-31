@@ -5,7 +5,6 @@ date: 2013-05-09T00:16:51+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=599
-permalink: /2013/05/09/utility-functions-for-udp-json-parser/
 categories:
   - Software Development
 tags:

@@ -5,7 +5,6 @@ date: 2012-02-01T19:23:12+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=414
-permalink: /2012/02/01/scoreboard-part-3-final-communicating-with-android-and-more/
 categories:
   - Android
   - Electronic Projects

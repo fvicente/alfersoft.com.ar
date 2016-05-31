@@ -5,7 +5,6 @@ date: 2009-03-30T22:40:00+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=17
-permalink: /2009/03/30/cool-javascript-tool-window/
 categories:
   - Software Development
 tags:

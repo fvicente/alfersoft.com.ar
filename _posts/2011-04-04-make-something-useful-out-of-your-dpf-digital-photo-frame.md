@@ -5,7 +5,6 @@ date: 2011-04-04T13:52:05+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=221
-permalink: /2011/04/04/make-something-useful-out-of-your-dpf-digital-photo-frame/
 categories:
   - Electronic Projects
   - Software Development

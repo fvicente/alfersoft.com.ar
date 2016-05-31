@@ -5,7 +5,6 @@ date: 2010-08-26T19:37:48+00:00
 author: fvicente
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=145
-permalink: /2010/08/26/firefox-add-on-uploadprogress/
 categories:
   - Software Applications
   - Software Development

@@ -5,7 +5,6 @@ date: 2010-06-22T12:55:12+00:00
 author: alf
 layout: post
 guid: http://www.alfersoft.com.ar/blog/?p=139
-permalink: /2010/06/22/motherboard-bios-not-saving-changes/
 categories:
   - Hardware repairing
 comments: true
