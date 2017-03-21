@@ -1,7 +1,7 @@
 {% if site.owner.disqus-shortname %}
 <script>
     var disqus_config = function () {
-        this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.permalink }}';
+        this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
         this.page.identifier = '{{ page.uid }} {{ site.url }}{{ site.baseurl }}/{{ page.guid }}';
     };
     (function() {  // DON'T EDIT BELOW THIS LINE
