@@ -30,7 +30,7 @@ Using **[Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes)** Jekyll
 ```
 # cd /server/www/alfersoft.com.ar/src
 # git pull
-# jekyll build
+# bundle exec jekyll build
 # cp -R _site/* ../www/blog/
 # chown -R www-data:www-data ../www/blog
 ```

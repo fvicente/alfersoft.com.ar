@@ -4,7 +4,7 @@ title: 'FAIL: How to NOT try to hack a cheap GPRS module to change its IMEI'
 date: 2012-07-26T11:30:51+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=543
+guid: ?p=543
 categories:
   - Electronic Projects
 tags:

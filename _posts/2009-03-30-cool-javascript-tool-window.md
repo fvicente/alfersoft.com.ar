@@ -4,7 +4,7 @@ title: Cool JavaScript Tool Window
 date: 2009-03-30T22:40:00+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=17
+guid: ?p=17
 categories:
   - Software Development
 tags:
@@ -29,7 +29,7 @@ This JavaScript class wraps a given HTML element into a movable and resizable fl
 
 The pieces of code developed by me are released under BSD license, please verify third party libraries licenses before using them.
 
-See the <a title="Tool Window" href="http://www.alfersoft.com.ar/files/toolwindow/index.html" target="_blank">DEMO PAGE!</a>
+See the <a title="Tool Window" href="{{ site.url }}/files/toolwindow/index.html" target="_blank">DEMO PAGE!</a>
 
 
 <a title="Download Tool Window" markdown="0" href="https://github.com/fvicente/toolwindow/archive/master.zip" class="btn">Download Source Code</a>

@@ -4,7 +4,7 @@ title: 'Denise&#8217;s birthday problem solution (in Python)'
 date: 2015-06-17T11:16:19+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=752
+guid: ?p=752
 categories:
   - Software Development
 tags:

@@ -4,7 +4,7 @@ title: 'How to fix the &#8220;federated domain&#8221; problem in emesene'
 date: 2011-03-30T14:36:23+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=215
+guid: ?p=215
 categories:
   - Linux FAQ
   - Software Applications

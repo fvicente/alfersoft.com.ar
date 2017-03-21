@@ -4,7 +4,7 @@ title: 'USocket &#8211; USB controlled Socket with PIC18F4550'
 date: 2008-07-08T01:06:25+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=9
+guid: ?p=9
 categories:
   - Electronic Projects
 tags:

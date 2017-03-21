@@ -4,7 +4,7 @@ title: Featuring FullControl for Android, or how to control your phone bill
 date: 2012-06-20T13:19:27+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=506
+guid: ?p=506
 categories:
   - Android
   - Software Applications

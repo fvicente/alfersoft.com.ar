@@ -4,7 +4,7 @@ title: Playing around with Arduino
 date: 2011-08-31T01:10:03+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=277
+guid: ?p=277
 categories:
   - Electronic Projects
 tags:

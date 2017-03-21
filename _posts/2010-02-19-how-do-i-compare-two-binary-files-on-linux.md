@@ -4,7 +4,7 @@ title: How do I compare two binary files on Linux?
 date: 2010-02-19T14:51:00+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=128
+guid: ?p=128
 categories:
   - Linux FAQ
   - Programming FAQ

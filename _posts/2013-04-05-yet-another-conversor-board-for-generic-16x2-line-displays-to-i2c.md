@@ -4,7 +4,7 @@ title: 'Yet another conversor board for generic 16&#215;2 line displays to I2C'
 date: 2013-04-05T01:10:30+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=552
+guid: ?p=552
 categories:
   - Electronic Projects
 tags:

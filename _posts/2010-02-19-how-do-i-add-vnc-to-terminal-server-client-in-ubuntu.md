@@ -4,7 +4,7 @@ title: How do I add VNC to Terminal Server Client in Ubuntu?
 date: 2010-02-19T14:45:14+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=123
+guid: ?p=123
 categories:
   - Linux FAQ
 tags:

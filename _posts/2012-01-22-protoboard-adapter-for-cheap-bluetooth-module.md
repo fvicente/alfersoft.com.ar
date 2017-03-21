@@ -4,7 +4,7 @@ title: Protoboard adapter for cheap Bluetooth module
 date: 2012-01-22T15:52:46+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=380
+guid: ?p=380
 categories:
   - Electronic Projects
 tags:

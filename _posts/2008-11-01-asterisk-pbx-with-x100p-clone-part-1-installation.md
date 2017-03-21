@@ -4,7 +4,7 @@ title: 'Asterisk PBX with X100P Clone (Part 1: Installation)'
 date: 2008-11-01T20:08:54+00:00
 author: alf
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=28
+guid: ?p=28
 categories:
   - Software Applications
 tags:

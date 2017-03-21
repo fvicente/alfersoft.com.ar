@@ -4,7 +4,7 @@ title: Brute force attack a BIOS with Arduino
 date: 2011-11-14T21:55:27+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=320
+guid: ?p=320
 dsq_thread_id:
   - 4582867533
 categories:

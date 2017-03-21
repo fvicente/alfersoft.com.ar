@@ -4,7 +4,7 @@ title: 'Scoreboard (Part 2: Reading UART from the Bluetooth Module)'
 date: 2012-01-23T17:41:03+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=394
+guid: ?p=394
 categories:
   - Electronic Projects
 tags:

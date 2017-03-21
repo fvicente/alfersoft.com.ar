@@ -4,7 +4,7 @@ title: Converting Visual Studio solutions to Makefiles
 date: 2008-05-23T00:27:05+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=4
+guid: ?p=4
 categories:
   - Software Development
 tags:

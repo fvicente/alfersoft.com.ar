@@ -4,7 +4,7 @@ title: 'Firefox add-on: UploadProgress'
 date: 2010-08-26T19:37:48+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=145
+guid: ?p=145
 categories:
   - Software Applications
   - Software Development

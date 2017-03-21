@@ -4,7 +4,7 @@ title: Sony Entertainment Network spam stopper
 date: 2015-09-13T00:53:20+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=770
+guid: ?p=770
 categories:
   - Programming FAQ
   - Software Development

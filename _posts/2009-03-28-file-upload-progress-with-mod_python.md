@@ -4,7 +4,7 @@ title: File Upload Progress with mod_python
 date: 2009-03-28T02:07:42+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=97
+guid: ?p=97
 categories:
   - Software Development
 tags:
@@ -31,7 +31,7 @@ So, with the same method that everybody uses consisting in an upload form with a
 
 Additionally I&#8217;ve added an upload size limit control based in examples that can be found in the mod_python forum site. Use the source Luke!
 
-See <a title="Upload Progress Demo" href="http://www.alfersoft.com.ar/uprogress/" target="_blank">LIVE DEMO!</a>
+See <a title="Upload Progress Demo" href="{{ site.url }}/uprogress/" target="_blank">LIVE DEMO!</a>
 
 <!--more-->
 

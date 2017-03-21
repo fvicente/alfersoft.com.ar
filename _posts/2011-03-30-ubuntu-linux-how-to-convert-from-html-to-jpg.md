@@ -4,7 +4,7 @@ title: 'Ubuntu Linux: How to Convert from HTML to JPG'
 date: 2011-03-30T12:03:41+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=202
+guid: ?p=202
 dsq_thread_id:
   - 4582867518
 categories:

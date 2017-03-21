@@ -4,7 +4,7 @@ title: Compress a directory in inno setup
 date: 2014-04-18T21:03:08+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=709
+guid: ?p=709
 categories:
   - Programming FAQ
   - Software Development

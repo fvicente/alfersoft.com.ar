@@ -4,7 +4,7 @@ title: '3D Printer &#8211; Z Axis Calibration'
 date: 2015-05-25T14:57:22+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=740
+guid: ?p=740
 categories:
   - 3D Printer
   - Electronic Projects

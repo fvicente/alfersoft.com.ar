@@ -4,7 +4,7 @@ title: Simplified DES (S-DES) file encryption implementation in C
 date: 2009-05-08T17:34:11+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=103
+guid: ?p=103
 categories:
   - Software Development
 tags:

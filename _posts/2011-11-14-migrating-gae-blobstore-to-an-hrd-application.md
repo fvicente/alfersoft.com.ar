@@ -4,7 +4,7 @@ title: Migrating GAE Blobstore to an HRD application
 date: 2011-11-14T00:09:40+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=296
+guid: ?p=296
 categories:
   - Programming FAQ
   - Software Development

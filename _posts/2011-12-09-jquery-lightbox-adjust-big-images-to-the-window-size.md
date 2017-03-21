@@ -4,7 +4,7 @@ title: 'jQuery Lightbox: Adjust big images to the window size'
 date: 2011-12-09T09:21:27+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=350
+guid: ?p=350
 categories:
   - Software Development
 tags:

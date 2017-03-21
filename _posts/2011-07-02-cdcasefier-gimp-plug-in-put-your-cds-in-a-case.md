@@ -4,7 +4,7 @@ title: 'CDCasefier Gimp plug-in &#8211; Put your CDs in a case'
 date: 2011-07-02T21:41:20+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=248
+guid: ?p=248
 categories:
   - Software Applications
 tags:

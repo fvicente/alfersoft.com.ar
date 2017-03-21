@@ -4,7 +4,7 @@ title: Utility functions for udp / json-parser
 date: 2013-05-09T00:16:51+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=599
+guid: ?p=599
 categories:
   - Software Development
 tags:

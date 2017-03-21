@@ -4,7 +4,7 @@ title: 'Jinja2 + Eclipse: quickly replace trans / endtrans to gettext( ) new sty
 date: 2013-05-10T22:02:58+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=604
+guid: ?p=604
 categories:
   - Programming FAQ
   - Software Development

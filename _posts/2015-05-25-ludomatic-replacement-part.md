@@ -4,7 +4,7 @@ title: Ludomatic Replacement Part
 date: 2015-05-25T19:13:16+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=744
+guid: ?p=744
 categories:
   - 3D Printer
 tags:

@@ -4,7 +4,7 @@ title: 'TortoiseSVN, non-standard SSH port, Network Error: Connection Refused'
 date: 2013-04-20T02:08:19+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=591
+guid: ?p=591
 categories:
   - Programming FAQ
   - Software Development

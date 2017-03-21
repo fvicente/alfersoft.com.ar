@@ -4,7 +4,7 @@ title: (HTML) Table cell not inheriting style
 date: 2009-06-04T21:24:27+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=108
+guid: ?p=108
 categories:
   - Programming FAQ
 comments: true

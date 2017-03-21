@@ -4,7 +4,7 @@ title: How to calculate the space used by files in Linux?
 date: 2010-02-19T15:09:26+00:00
 author: fvicente
 layout: post
-guid: http://www.alfersoft.com.ar/blog/?p=131
+guid: ?p=131
 categories:
   - Linux FAQ
 tags:
