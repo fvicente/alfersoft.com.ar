@@ -9,7 +9,7 @@ url:              https://www.alfersoft.com.ar
 # Jekyll configuration
 
 # permalink:   /:categories/:title/
-permalink:   pretty
+permalink:   /:year/:month/:day/:title/
 markdown:    kramdown
 highlighter: pygments
 sass:
