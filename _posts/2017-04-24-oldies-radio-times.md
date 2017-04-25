@@ -128,7 +128,7 @@ Note: The header of the file says that the authors are Bernardo Katz and Juan Ma
 ## QSL Manager
 
 This Clipper program, oddly named VENTANA (which is window in Spanish as you might know) was used to keep track of QSL cards sent or received, and also as an utility to find the country given the first letters of a ham radio license. It has also a screen saver to protect your CRT monitor! WOW!.
-It uses a C extension in order to support mouse, and to display two clocks on screen one with the local time and the other with UTC. So, you&#8217;ll need Borland C besides CA-Clipper in order to build this software. It was used by my friend LU9AAK.
+It uses a C extension in order to support mouse, and to display two clocks on screen one with the local time and the other with UTC. So, you&#8217;ll need Borland C besides CA-Clipper in order to build this software. It was used by my friend LU8AAK.
 
 
 <figure class="half">
