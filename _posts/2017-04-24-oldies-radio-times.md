@@ -25,7 +25,7 @@ A collection of old programs I made in several languages like Basic, Clipper and
 
 In order to build and run Basic and Clipper programs, I&#8217;ve downloaded [DOSBox](https://www.dosbox.com/) which is a D.O.S. emulator that runs on Mac OS X and other platforms.
 
-Also, I&#8217;ve found installers for CA-Clipper on a site called [WinWorld](https://winworldpc.com/download/9175DEEA-5A91-11E5-8FA3-C86000DD9ED6), and Quick Basic 4.5 from [http://www.phatcode.net/](http://www.phatcode.net/downloads.php?id=172&action=get&file=qb45.zip)
+Also, I&#8217;ve found installers for CA-Clipper on a site called [WinWorld](https://winworldpc.com/download/9175DEEA-5A91-11E5-8FA3-C86000DD9ED6), and Quick Basic 4.5 from [http://www.phatcode.net/](http://www.phatcode.net/downloads.php?id=172&action=get&file=qb45.zip). Clipper extensions written in C, can be built with Borland C++ 2.0, wich can also be downloaded from this [WinWorld](https://winworldpc.com/download/469f0d6d-18da-11e4-99e5-7054d21a8599/from/630d4e90-3d33-11e6-977e-525400b25447) link.
 
 DOSBox allows you to mount directories of your local machine as drives. So, I&#8217;ve created two directories in my home folder and mounted them as A: and C:.
 
@@ -50,6 +50,15 @@ Add Clipper to the PATH environment variable, so you can build the sources from 
 {% highlight bat %}
 A:\>c:\AUTOEXEC.BAT
 {% endhighlight %}
+
+The process to install Quick Basic 4.5 is pretty similar. Uncompress downloaded installer, and you&#8217;ll find two directories on it DISK1 and DISK2. Proceed to empty your ~/temp and copy the contents of both DISK directories on it. Don&#8217;t forget to rescan DOSBox with Ctrl + (fn) + F4.
+Change to the A: drive and run SETUP.EXE. I&#8217;ve chosen default options, which results in a lot of <Enters> to confirm the creation of each target directory.
+
+Same for Borland C++, go ahead and extract the disks on the temporary directory then run A:\INSTALL.EXE. You might need to set the path to find BCC binaries:
+{% highlight bat %}
+A:\>set PATH=%PATH%;C:\BORLANDC\BIN
+{% endhighlight %}
+
 
 
 ## Maxon SM-3010 Frequency / Diode Matrix calculator
@@ -98,3 +107,54 @@ C:\>3010.EXE
 
 
 [3010 Source Code on GitHub](https://github.com/fvicente/oldies/tree/master/3010)
+
+
+## ECG
+
+Another Clipper program aimed to replace the famous semiconductor replacement guide ECG.
+Unfortunatelly, the database is empty, so this program is pretty much useless. I don&#8217;t think this code was ever used by anyone, to be honest. The idea looks good, but for this to work will require someone to go through the whole ECG guide copying thousands or millons of codes manually.
+
+Note: The header of the file says that the authors are Bernardo Katz and Juan Matteucci, I don&#8217;t think I personally know Juan, but I know Bernardo for sure, so I must say that probably he either used this code to teach me how to program in Clipper or I used his code from another project as a base for this prototype.
+
+<figure class="half">
+	<a href="{{ site.baseurl }}/images/ecg.jpg" target="_blank"><img src="{{ site.baseurl }}/images/ecg.jpg" alt="ECG Book" title="ECG Book"/></a>
+	<a href="{{ site.baseurl }}/images/ecg_ss.png" target="_blank"><img src="{{ site.baseurl }}/images/ecg_ss.png" alt="ECG Screenshot" title="ECG Screenshot"/></a>
+</figure>
+
+
+[ECG Source Code on GitHub](https://github.com/fvicente/oldies/tree/master/ECG)
+
+
+## QSL Manager
+
+This Clipper program, oddly named VENTANA (which is window in Spanish as you might know) was used to keep track of QSL cards sent or received, and also as an utility to find the country given the first letters of a ham radio license. It has also a screen saver to protect your CRT monitor! WOW!.
+It uses a C extension in order to support mouse, and to display two clocks on screen one with the local time and the other with UTC. So, you&#8217;ll need Borland C besides CA-Clipper in order to build this software. It was used by my friend LU9AAK.
+
+
+<figure class="half">
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_01.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_01.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_02.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_02.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+</figure>
+
+<figure class="half">
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_03.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_03.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_04.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_04.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+</figure>
+
+<figure class="half">
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_05.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_05.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_06.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_06.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+</figure>
+
+<figure class="half">
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_07.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_07.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_08.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_08.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+</figure>
+
+<figure class="half">
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_09.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_09.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+	<a href="{{ site.baseurl }}/images/qsl/qsl_ss_10.png" target="_blank"><img src="{{ site.baseurl }}/images/qsl/qsl_ss_10.png" alt="QSL Screenshot" title="QSL Screenshot"/></a>
+</figure>
+
+
+[QSL Source Code on GitHub](https://github.com/fvicente/oldies/tree/master/QSL)
