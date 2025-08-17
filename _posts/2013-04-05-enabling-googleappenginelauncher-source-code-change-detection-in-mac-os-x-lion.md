@@ -3,7 +3,7 @@ uid: 586
 title: Enabling GoogleAppEngineLauncher Source Code Change Detection in Mac OS X Lion
 date: 2013-04-05T02:17:20+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=586
 categories:
   - Software Development

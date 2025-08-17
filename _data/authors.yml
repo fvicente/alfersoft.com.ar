@@ -5,11 +5,17 @@ alf:
   web: /blog
   email: avicente@gmail.com
   bio: "Miren! una tormenta de cucharitas"
-  avatar: bio-avicente.jpg
+  avatar: images/bio-avicente.jpg
 
 fvicente:
   name: Peuchele
   web: /blog
   email: fvicente@gmail.com
   bio: "Pedí pollo que yo pago la diferencia!"
-  avatar: bio-fvicente.jpg
+  avatar: images/bio-fvicente.jpg
+
+alfersoft:
+  name: AlferSoft
+  avatar: images/bio-alfersoft.jpg
+  bio: "Since 1999"
+  avatar: images/bio-alfersoft.jpg

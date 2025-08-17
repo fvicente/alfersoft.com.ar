@@ -3,7 +3,7 @@ uid: 8
 title: Slice and rotate images with CutNRot
 date: 2008-06-04T20:24:19+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=8
 categories:
   - Software Development

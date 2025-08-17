@@ -3,7 +3,7 @@ uid: 139
 title: Motherboard BIOS not saving changes
 date: 2010-06-22T12:55:12+00:00
 author: alf
-layout: post
+layout: single
 guid: ?p=139
 categories:
   - Hardware repairing

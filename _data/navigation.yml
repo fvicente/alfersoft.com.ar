@@ -1,10 +1,8 @@
-# Site navigation links
-
-- title: About
-  url: /about/
-
-- title: All Posts
-  url: /posts/
-
-# - title: Theme Setup
-#   url: /theme-setup/
+main:
+  - title: About
+    url: /about/
+  - title: All Posts
+    url: /posts/
+  - title: "GitHub"
+    url: "https://github.com/fvicente"
+    external: true

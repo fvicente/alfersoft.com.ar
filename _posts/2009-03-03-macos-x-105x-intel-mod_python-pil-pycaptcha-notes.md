@@ -3,7 +3,7 @@ uid: 89
 title: MacOS X 10.5.x (Intel) + mod_python + PIL + PyCAPTCHA notes
 date: 2009-03-03T23:04:10+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=89
 categories:
   - Software Development

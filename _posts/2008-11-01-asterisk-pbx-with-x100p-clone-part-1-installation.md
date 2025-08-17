@@ -3,7 +3,7 @@ uid: 28
 title: 'Asterisk PBX with X100P Clone (Part 1: Installation)'
 date: 2008-11-01T20:08:54+00:00
 author: alf
-layout: post
+layout: single
 guid: ?p=28
 categories:
   - Software Applications

@@ -3,7 +3,7 @@ uid: 108
 title: (HTML) Table cell not inheriting style
 date: 2009-06-04T21:24:27+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=108
 categories:
   - Programming FAQ

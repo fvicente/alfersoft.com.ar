@@ -3,7 +3,7 @@ uid: 770
 title: Sony Entertainment Network spam stopper
 date: 2015-09-13T00:53:20+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=770
 categories:
   - Programming FAQ

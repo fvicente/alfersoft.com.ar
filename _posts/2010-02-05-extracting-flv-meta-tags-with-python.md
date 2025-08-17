@@ -3,7 +3,7 @@ uid: 112
 title: Extracting FLV meta tags with Python
 date: 2010-02-05T21:07:36+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=112
 categories:
   - Programming FAQ

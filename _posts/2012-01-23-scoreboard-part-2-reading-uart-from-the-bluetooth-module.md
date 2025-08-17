@@ -3,7 +3,7 @@ uid: 394
 title: 'Scoreboard (Part 2: Reading UART from the Bluetooth Module)'
 date: 2012-01-23T17:41:03+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=394
 categories:
   - Electronic Projects

@@ -3,7 +3,7 @@ uid: 9
 title: 'USocket &#8211; USB controlled Socket with PIC18F4550'
 date: 2008-07-08T01:06:25+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=9
 categories:
   - Electronic Projects

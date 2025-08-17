@@ -3,7 +3,7 @@ uid: 771
 title: Oldies - Radio Times
 date: 2017-04-24T00:00:00+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=771
 categories:
   - Ham Radio

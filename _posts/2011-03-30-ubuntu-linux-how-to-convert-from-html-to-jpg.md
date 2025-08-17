@@ -3,7 +3,7 @@ uid: 202
 title: 'Ubuntu Linux: How to Convert from HTML to JPG'
 date: 2011-03-30T12:03:41+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=202
 dsq_thread_id:
   - 4582867518

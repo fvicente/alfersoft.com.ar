@@ -3,7 +3,7 @@ uid: 284
 title: 'Tiny Pong: More fun with ATtiny45 and VGA'
 date: 2011-09-19T23:54:13+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=284
 categories:
   - Electronic Projects

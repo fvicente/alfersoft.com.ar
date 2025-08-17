@@ -3,7 +3,7 @@ uid: 740
 title: '3D Printer &#8211; Z Axis Calibration'
 date: 2015-05-25T14:57:22+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=740
 categories:
   - 3D Printer

@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: single
 title: About AlferSoft
 tags: [about, AlferSoft, software, electronics, hobby]
 modified: 2016-02-17T00:00:00.000000-03:00
 comments: true
+author: alfersoft
+author_profile: true
 # image:
 #   feature: sample-image-2.jpg
 #   credit: WeGraphics

@@ -3,7 +3,7 @@ uid: 168
 title: POIMan for Sygic
 date: 2011-02-10T12:57:59+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=168
 categories:
   - Android

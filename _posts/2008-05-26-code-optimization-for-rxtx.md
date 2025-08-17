@@ -3,7 +3,7 @@ uid: 6
 title: Code optimization for RXTX parallel port implementation
 date: 2008-05-26T23:02:13+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=6
 categories:
   - Software Development

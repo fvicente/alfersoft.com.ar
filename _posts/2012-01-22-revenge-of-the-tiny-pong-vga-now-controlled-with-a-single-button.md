@@ -3,7 +3,7 @@ uid: 345
 title: Revenge of the Tiny Pong VGA, now controlled with a single button
 date: 2012-01-22T01:09:16+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=345
 categories:
   - Electronic Projects

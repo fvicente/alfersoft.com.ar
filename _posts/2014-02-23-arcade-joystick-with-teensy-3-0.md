@@ -3,7 +3,7 @@ uid: 681
 title: Arcade Joystick with Teensy 3.0
 date: 2014-02-23T23:14:50+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=681
 categories:
   - Electronic Projects

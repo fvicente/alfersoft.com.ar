@@ -3,7 +3,7 @@ uid: 17
 title: Cool JavaScript Tool Window
 date: 2009-03-30T22:40:00+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=17
 categories:
   - Software Development

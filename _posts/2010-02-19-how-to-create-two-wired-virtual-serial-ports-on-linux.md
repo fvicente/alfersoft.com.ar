@@ -3,7 +3,7 @@ uid: 134
 title: How to create two wired virtual serial ports on Linux?
 date: 2010-02-19T15:18:32+00:00
 author: fvicente
-layout: post
+layout: single
 guid: ?p=134
 categories:
   - Linux FAQ

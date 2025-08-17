@@ -8,16 +8,38 @@ url:              https://www.alfersoft.com.ar
 
 # Jekyll configuration
 
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+repository: "fvicente/alfersoft.com.ar"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      comments: true
+      show_date: true
+      read_time: true
+      share: true
+      related: true
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "alfersoft"
+
 # permalink:   /:categories/:title/
 permalink:   /:year/:month/:day/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
 plugins:
   - jekyll-gist
   - jekyll-paginate-v2
+  - jekyll-include-cache
 
 kramdown:
   auto_ids: true
@@ -33,7 +55,7 @@ post_ext: md
 page_ext: md
 
 # Found in _templates/
-post_layout: post
+post_layout: single
 page_layout: page
 
 # Format titles with titlecase?
@@ -51,7 +73,7 @@ pagination:
 # Site owner
 owner:
   name: AlferSoft
-  avatar: bio-alfersoft.jpg
+  avatar: images/bio-alfersoft.jpg
   bio: "Since 1999"
   email:
   disqus-shortname: alfersoft
