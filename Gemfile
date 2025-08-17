@@ -1,8 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.0"
-gem "jekyll-sitemap"
+gem "jekyll", "~> 4.4.1"
 gem "jekyll-gist"
-gem "jekyll-paginate"
+gem "jekyll-paginate-v2"
 gem "octopress"
 gem "pygments.rb"

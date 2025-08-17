@@ -1,14 +1,17 @@
+@use "variables";
+@use "mixins";
+
 /* ==========================================================================
    Coderay syntax highlighting
    ========================================================================== */
 
 .CodeRay {
   background-color: #efefef;
-  font-family: $code-font;
-  @include font(12);
+  font-family: variables.$code-font;
+  @include mixins.font(12);
   color: #333332;
   margin-bottom: 1.5em;
-  @include rounded(4px);
+  @include mixins.rounded(4px);
   pre {
     margin: 0px;
     padding: 1em;

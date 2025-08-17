@@ -15,10 +15,9 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: compressed
-gems:
-  - jekyll-sitemap
+plugins:
   - jekyll-gist
-  - jekyll-paginate
+  - jekyll-paginate-v2
 
 kramdown:
   auto_ids: true
@@ -40,8 +39,14 @@ page_layout: page
 # Format titles with titlecase?
 titlecase: true
 
-paginate: 5
-paginate_path: "/page/:num"
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: /page/:num/
+  title: ':title - page :num'
+  sort_field: 'date'
+  sort_reverse: true
+  limit: 0   # 0 = no limit
 
 # Site owner
 owner:

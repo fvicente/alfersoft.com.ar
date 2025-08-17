@@ -10,7 +10,7 @@ comments: true
 #   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-AlferSoft is a blog with random stuff about software development, electronics, hardware and whatever we want to write about, or we find difficult to catch on the Internet.
+AlferSoft is a blog with random stuff about software development, electronics, hardware or whatever we want to write about, or we find difficult to find on the Internet.
 
 ## Things you will find in this blog:
 
